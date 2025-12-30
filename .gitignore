@@ -1,0 +1,9 @@
+Dataset_AIRS&AICS/
+.env
+docTR.py
+extractor2.py
+full_text.json
+icd.py
+airs/
+aics/
+__pycache__/
