@@ -9,8 +9,8 @@ from datetime import datetime
 # -------------------------------
 # CONFIG
 # -------------------------------
-DOC_PATH = "/mnt/StorageHDD/AIRS/digestive_disease/template2_documents_AGED/light/S0212-71992007000700008-1/4_pathology.pdf"
-OUTPUT_DIR = "extracted_json"
+DOC_PATH = "/mnt/StorageHDD/AIRS/Dataset_AIRS&AICS/cancer/template2_documents_AGED/light/S0212-16112010000100017-1/5_discharge.pdf"
+OUTPUT_DIR = "extracted"
 Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
 

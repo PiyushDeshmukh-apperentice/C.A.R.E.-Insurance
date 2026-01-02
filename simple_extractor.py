@@ -7,11 +7,11 @@ import json
 # HARDCODED PATHS
 # --------------------------------------------------
 INPUT_DOCUMENT = Path(
-    "/mnt/StorageHDD/PICT/digestive_disease/template3_documents_AGED/medium/S1130-63432016000400011-1/6_bill.pdf"
+    "/mnt/StorageHDD/AIRS/Dataset_AIRS&AICS/digestive_disease/template2_documents_AGED/light/S0213-12852016000400002-1/4_pathology.pdf"
 )
 
 OUTPUT_JSON = Path(
-    "/mnt/StorageHDD/PICT/full_text.json"
+    "/mnt/StorageHDD/AIRS/full_text2.json"
 )
 
 OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)

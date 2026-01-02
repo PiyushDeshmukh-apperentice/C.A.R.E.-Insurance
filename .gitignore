@@ -7,3 +7,5 @@ icd.py
 airs/
 aics/
 __pycache__/
+extracted/
+full_text2.json
