@@ -48,4 +48,8 @@ logs/
 
 # Temporary files
 *.tmp
+
+# Model files
+*.pth
+car_severity_model.pth
 *.bak

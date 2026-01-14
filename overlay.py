@@ -1,8 +1,8 @@
 import cv2
 import json
-import random
 import numpy as np
 from ultralytics import YOLO
+from predict_cnn_severity import predict_severity
 
 # ------------------ LOAD MODELS ------------------
 part_model = YOLO("car_part_model.pt")
@@ -61,6 +61,9 @@ for mask in damage_masks:
 # ------------------ INTERSECTION LOGIC ------------------
 damaged_parts = []
 
+# Get severity prediction from CNN model
+predicted_class, severity_score = predict_severity(image_path)
+
 for i, p_mask in enumerate(part_masks):
     p_cls = int(part_boxes[i].cls[0])
     part_name = part_model.names[p_cls]
@@ -80,10 +83,10 @@ for i, p_mask in enumerate(part_masks):
             # Highlight intersection in BLUE
             overlay[intersection] = (255, 0, 0)
             
-            # Store damaged part info
+            # Store damaged part info with severity from CNN prediction
             damaged_parts.append({
                 "part_name": part_name,
-                "severity": round(random.uniform(0, 1), 2)
+                "severity": severity_score
             })
 
 # Determine damage type based on severity
