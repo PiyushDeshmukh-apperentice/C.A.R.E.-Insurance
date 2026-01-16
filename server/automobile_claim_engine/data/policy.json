@@ -1,0 +1,110 @@
+{
+  "policy_id": "MOTOR_PRIVATE_CAR_001",
+  "policy_name": "Private Car Comprehensive Policy",
+  "policy_type": "motor_vehicle",
+  "active": true,
+
+  "vehicle_eligibility": {
+    "allowed_types": ["private"],
+    "allowed_categories": ["car"]
+  },
+
+  "incident_conditions": {
+    "allowed_activities": [
+      "road_accident",
+      "collision",
+      "fire",
+      "theft",
+      "natural_disaster"
+    ],
+    "excluded_activities": [
+      "racing",
+      "stunt_driving",
+      "illegal_activity"
+    ]
+  },
+
+  "driver_conditions": {
+    "min_age": 18,
+    "max_age": 70,
+    "requires_license": true,
+    "allow_under_influence": false,
+    "min_experience_years": 1
+  },
+
+  "coverage": {
+    "covered_parts": [
+      "Back-bumper",
+      "Back-door",
+      "Back-wheel",
+      "Back-window",
+      "Back-windshield",
+      "Fender",
+      "Front-bumper",
+      "Front-door",
+      "Front-wheel",
+      "Front-window",
+      "Grille",
+      "Headlight",
+      "Hood",
+      "License-plate",
+      "Mirror",
+      "Quarter-panel",
+      "Rocker-panel",
+      "Roof",
+      "Tail-light",
+      "Trunk",
+      "Windshield"
+    ],
+
+    "excluded_parts": [
+      "tyres",
+      "battery",
+      "engine_oil",
+      "coolant",
+      "brake_oil",
+      "clutch_plate",
+      "spark_plugs",
+      "filters",
+      "belts",
+      "bearings"
+    ]
+  },
+
+  "depreciation_rules": {
+    "metal_parts": {
+      "0_to_6_months": 0.0,
+      "6_to_12_months": 0.05,
+      "1_to_2_years": 0.10,
+      "2_to_3_years": 0.15,
+      "3_to_4_years": 0.25,
+      "4_to_5_years": 0.35,
+      "above_5_years": 0.50
+    },
+    "plastic_parts": {
+      "all_ages": 0.50
+    },
+    "rubber_parts": {
+      "all_ages": 0.50
+    }
+  },
+
+  "idv_rules": {
+    "base_ex_showroom_price_required": true,
+    "annual_depreciation_rate": 0.10,
+    "minimum_idv_percentage": 0.40
+  },
+
+  "deductibles": {
+    "mandatory_deductible": 1000,
+    "voluntary_deductible": 0
+  },
+
+  "total_loss_rules": {
+    "threshold_percentage_of_idv": 0.75
+  },
+
+  "claim_limits": {
+    "max_claims_per_year": 2
+  }
+}

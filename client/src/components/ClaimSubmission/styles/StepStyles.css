@@ -1,0 +1,465 @@
+/* StepStyles.css - Shared styles for all steps - Theme: Dark Blue (#0C204B), Light Blue (#DBF4FF) */
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.step-header {
+  margin-bottom: 8px;
+}
+
+.step-title {
+  margin: 0 0 8px 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0C204B;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.step-description {
+  margin: 0;
+  font-size: 14px;
+  color: #0C204B;
+  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+/* Content */
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Form Sections */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0C204B;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-option {
+  position: relative;
+}
+
+.radio-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-option input[type="radio"] + .radio-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 2px solid #DBF4FF;
+  border-radius: 10px;
+  background: #F8FCFF;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+  font-family: 'Outfit', sans-serif;
+}
+
+.radio-option input[type="radio"]:checked + .radio-label {
+  border-color: #0C204B;
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.08), rgba(26, 58, 107, 0.08));
+  box-shadow: 0 4px 12px rgba(12, 32, 75, 0.1);
+}
+
+.radio-option input[type="radio"]:hover + .radio-label {
+  border-color: #0C204B;
+  transform: translateY(-1px);
+}
+
+.radio-label {
+  flex: 1;
+}
+
+.radio-icon {
+  font-size: 24px;
+  min-width: 24px;
+}
+
+.radio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.radio-title {
+  font-weight: 700;
+  color: #0C204B;
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.radio-desc {
+  font-size: 13px;
+  color: #0C204B;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* Checkbox Option */
+.checkbox-option {
+  position: relative;
+}
+
+.checkbox-option input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-option input[type="checkbox"] + .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border: 2px solid #DBF4FF;
+  border-radius: 10px;
+  background: #F8FCFF;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+  font-family: 'Outfit', sans-serif;
+}
+
+.checkbox-option input[type="checkbox"]:checked + .checkbox-label {
+  border-color: #0C204B;
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.08), rgba(26, 58, 107, 0.08));
+}
+
+.checkbox-option input[type="checkbox"]:hover + .checkbox-label {
+  border-color: #0C204B;
+  transform: translateY(-1px);
+}
+
+.checkbox-label {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.checkbox-icon {
+  font-size: 20px;
+  min-width: 20px;
+  margin-top: 2px;
+}
+
+.checkbox-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.checkbox-title {
+  font-weight: 700;
+  color: #0C204B;
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.checkbox-desc {
+  font-size: 13px;
+  color: #0C204B;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* Alerts */
+.alert {
+  padding: 12px 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+}
+
+.alert-icon {
+  font-size: 18px;
+  min-width: 18px;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.alert-text {
+  flex: 1;
+}
+
+.alert-info {
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.08), rgba(219, 244, 255, 0.15));
+  border: 1px solid #DBF4FF;
+  color: #0C204B;
+}
+
+.alert-warning {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(217, 119, 6, 0.08));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #0C204B;
+}
+
+.alert-error {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(220, 38, 38, 0.08));
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #0C204B;
+}
+
+/* Footer */
+.step-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-content: flex-end;
+  padding-top: 12px;
+  border-top: 2px solid #DBF4FF;
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  .step-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s;
+  text-decoration: none;
+  user-select: none;
+  position: relative;
+  font-family: 'Outfit', sans-serif;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0C204B, #1a3a6b);
+  color: white;
+  box-shadow: 0 4px 12px rgba(12, 32, 75, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(12, 32, 75, 0.4);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: #0C204B;
+  border: 2px solid #DBF4FF;
+  font-weight: 600;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  border-color: #0C204B;
+  background: #F8FCFF;
+  transform: translateY(-2px);
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  background: #F8FCFF;
+  color: #0C204B;
+  border: 1px solid #DBF4FF;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  border-color: #0C204B;
+  background: #FFFFFF;
+}
+
+.btn-icon {
+  font-size: 14px;
+}
+
+.btn.loading {
+  pointer-events: none;
+}
+
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility Classes */
+.alert-warning-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1));
+  color: #D97706;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .step-container {
+    gap: 14px;
+  }
+
+  .step-title {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .step-description {
+    font-size: 13px;
+  }
+
+  .step-content {
+    gap: 14px;
+  }
+
+  .form-section {
+    gap: 8px;
+  }
+
+  .form-section-title {
+    font-size: 12px;
+  }
+
+  .radio-option input[type="radio"] + .radio-label,
+  .checkbox-option input[type="checkbox"] + .checkbox-label {
+    padding: 12px;
+  }
+
+  .radio-icon {
+    font-size: 20px;
+  }
+
+  .checkbox-icon {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 9px 14px;
+    font-size: 12px;
+  }
+}
+
+/* Policy Name Section - Premium Styling */
+.policy-name-section {
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.06), rgba(219, 244, 255, 0.2));
+  border: 2px solid #DBF4FF;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(12, 32, 75, 0.08);
+  gap: 16px;
+}
+
+.policy-name-section .form-section-title {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+/* Policy Name Input */
+.policy-name-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  border: 2px solid #DBF4FF;
+  border-radius: 10px;
+  background: #FFFFFF;
+  color: #0C204B;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.policy-name-input:focus {
+  outline: none;
+  border-color: #0C204B;
+  box-shadow: 0 0 0 4px rgba(12, 32, 75, 0.1);
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.02), rgba(219, 244, 255, 0.1));
+}
+
+.policy-name-input::placeholder {
+  color: #0C204B;
+  opacity: 0.6;
+}
+
+.policy-help-text {
+  margin: 0;
+  font-size: 13px;
+  color: #0C204B;
+  opacity: 0.75;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+

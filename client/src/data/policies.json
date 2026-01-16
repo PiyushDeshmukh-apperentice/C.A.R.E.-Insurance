@@ -1,0 +1,96 @@
+{
+  "policies": [
+    {
+      "id": "policy_001",
+      "userId": "user_001",
+      "name": "Health Protect",
+      "policyNumber": "MH12XXXXXX",
+      "type": "Health Insurance",
+      "status": "active",
+      "validity": "12/12/12",
+      "premium": 5000,
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01",
+      "createdAt": "2025-01-01T10:30:00Z"
+    },
+    {
+      "id": "policy_002",
+      "userId": "user_001",
+      "name": "RaiderDisc Two Wheeler",
+      "policyNumber": "MH12XXXXXX",
+      "type": "Two Wheeler Insurance",
+      "status": "active",
+      "validity": "12/12/12",
+      "premium": 3000,
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01",
+      "createdAt": "2025-01-01T10:35:00Z"
+    },
+    {
+      "id": "policy_003",
+      "userId": "user_001",
+      "name": "RaiderDisc Two Wheeler",
+      "policyNumber": "MH12XXXXXX",
+      "type": "Two Wheeler Insurance",
+      "status": "active",
+      "validity": "12/12/12",
+      "premium": 3000,
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01",
+      "createdAt": "2025-01-01T10:40:00Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_001",
+      "userId": "user_001",
+      "policyId": "policy_001",
+      "claimNumber": "CLM12345",
+      "status": "submitted",
+      "amount": 50000,
+      "submittedAt": "2025-01-05T10:30:00Z",
+      "createdAt": "2025-01-05T10:30:00Z"
+    },
+    {
+      "id": "claim_002",
+      "userId": "user_001",
+      "policyId": "policy_002",
+      "claimNumber": "CLM12346",
+      "status": "submitted",
+      "amount": 25000,
+      "submittedAt": "2025-01-06T11:00:00Z",
+      "createdAt": "2025-01-06T11:00:00Z"
+    },
+    {
+      "id": "claim_003",
+      "userId": "user_001",
+      "policyId": "policy_002",
+      "claimNumber": "CLM12347",
+      "status": "submitted",
+      "amount": 30000,
+      "submittedAt": "2025-01-07T09:30:00Z",
+      "createdAt": "2025-01-07T09:30:00Z"
+    },
+    {
+      "id": "claim_004",
+      "userId": "user_001",
+      "policyId": "policy_001",
+      "claimNumber": "CLM12348",
+      "status": "under_review",
+      "amount": 45000,
+      "submittedAt": "2025-01-08T14:20:00Z",
+      "expectedCompletion": "2025-01-18T14:20:00Z",
+      "createdAt": "2025-01-08T14:20:00Z"
+    },
+    {
+      "id": "claim_005",
+      "userId": "user_001",
+      "policyId": "policy_002",
+      "claimNumber": "CLM12349",
+      "status": "pending",
+      "amount": 35000,
+      "submittedAt": "2025-01-10T10:00:00Z",
+      "createdAt": "2025-01-10T10:00:00Z"
+    }
+  ]
+}

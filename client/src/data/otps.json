@@ -1,0 +1,61 @@
+{
+  "otps": [],
+  "emailOtps": [
+    {
+      "id": "email_otp_001",
+      "email": "john@example.com",
+      "otp": "111111",
+      "type": "email",
+      "createdAt": "2025-01-11T10:00:00Z",
+      "expiresAt": "2030-12-31T23:59:59Z",
+      "verified": true
+    },
+    {
+      "id": "email_otp_002",
+      "email": "jane@example.com",
+      "otp": "222222",
+      "type": "email",
+      "createdAt": "2025-01-11T10:00:00Z",
+      "expiresAt": "2030-12-31T23:59:59Z",
+      "verified": true
+    },
+    {
+      "id": "email_otp_003",
+      "email": "demo@sureva.com",
+      "otp": "333333",
+      "type": "email",
+      "createdAt": "2025-01-11T10:00:00Z",
+      "expiresAt": "2030-12-31T23:59:59Z",
+      "verified": true
+    }
+  ],
+  "phoneOtps": [
+    {
+      "id": "phone_otp_001",
+      "phone": "+91-9876543210",
+      "otp": "444444",
+      "type": "phone",
+      "createdAt": "2025-01-11T10:00:00Z",
+      "expiresAt": "2030-12-31T23:59:59Z",
+      "verified": true
+    },
+    {
+      "id": "phone_otp_002",
+      "phone": "+91-9876543211",
+      "otp": "555555",
+      "type": "phone",
+      "createdAt": "2025-01-11T10:00:00Z",
+      "expiresAt": "2030-12-31T23:59:59Z",
+      "verified": true
+    },
+    {
+      "id": "phone_otp_003",
+      "phone": "+91-9876543212",
+      "otp": "666666",
+      "type": "phone",
+      "createdAt": "2025-01-11T10:00:00Z",
+      "expiresAt": "2030-12-31T23:59:59Z",
+      "verified": true
+    }
+  ]
+}

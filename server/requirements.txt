@@ -1,0 +1,58 @@
+# Core Web Framework & API
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Authentication & Security
+bcrypt==4.1.2
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+cryptography==41.0.7
+
+# Environment Configuration
+python-dotenv==1.0.0
+
+# Database & ORM
+sqlalchemy==2.0.23
+
+# Data Processing & Analysis
+pandas==2.1.4
+numpy==1.24.3
+# Critical: Keep numpy pinned to 1.24.3 to avoid conflicts with Torch 2.1.2
+
+# Computer Vision & Image Processing
+opencv-python==4.8.1.78
+Pillow==10.1.0
+
+# Deep Learning & ML
+torch==2.1.2
+torchvision==0.16.2
+ultralytics
+# Unpinned to ensure Python 3.11 compatibility
+
+# OCR & Document Processing
+python-doctr==0.7.0
+rapidfuzz==3.5.2
+pymupdf
+# Changed to 'pymupdf' with no version pin to let pip find the compatible Windows wheel
+
+# AI/LLM Integration
+groq==0.4.2
+
+# Telegram Bot Framework
+python-telegram-bot==20.6
+
+# HTTP Requests
+requests==2.31.0
+
+# Optional: Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.12.1
+flake8==6.1.0
+mypy==1.7.1
+
+# Optional: Monitoring & Logging
+python-json-logger==2.0.7

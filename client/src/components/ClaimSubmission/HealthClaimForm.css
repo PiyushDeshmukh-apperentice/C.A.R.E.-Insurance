@@ -1,0 +1,191 @@
+/* HealthClaimForm.css - Theme: Dark Blue (#0C204B), Light Blue (#DBF4FF), Outfit Font */
+
+.health-claim-form-container {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 25px 70px rgba(12, 32, 75, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 32px);
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  animation: slideUp 0.4s ease-out;
+  border: 2px solid #DBF4FF;
+}
+
+/* Progress Bar */
+.claim-progress-bar {
+  padding: 20px;
+  background: linear-gradient(135deg, #F8FCFF 0%, #FFFFFF 100%);
+  border-bottom: 2px solid #DBF4FF;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 12px;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.progress-step.active {
+  opacity: 1;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #0C204B;
+  font-weight: 700;
+  border: 2px solid #DBF4FF;
+  transition: all 0.3s;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+}
+
+.progress-step.active .step-number {
+  background: linear-gradient(135deg, #0C204B, #1a3a6b);
+  color: #FFFFFF;
+  border-color: #0C204B;
+  box-shadow: 0 0 16px rgba(12, 32, 75, 0.3);
+}
+
+.progress-step.current .step-number {
+  border-color: #0C204B;
+}
+
+.step-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #0C204B;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.2;
+  max-width: 60px;
+}
+
+.progress-step.active .step-label {
+  color: #0C204B;
+  font-weight: 700;
+}
+
+.progress-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0C204B, #DBF4FF);
+  transition: width 0.3s ease;
+}
+
+/* Step Content */
+.claim-step-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 20px;
+  background: #FFFFFF;
+}
+
+/* Scrollbar styling for better UX */
+.claim-step-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.claim-step-content::-webkit-scrollbar-track {
+  background: #F8FCFF;
+}
+
+.claim-step-content::-webkit-scrollbar-thumb {
+  background: #DBF4FF;
+  border-radius: 3px;
+}
+
+.claim-step-content::-webkit-scrollbar-thumb:hover {
+  background: #0C204B;
+}
+
+@media (max-width: 768px) {
+  .health-claim-form-container {
+    max-height: 85vh;
+    border-radius: 16px;
+  }
+
+  .claim-step-content {
+    padding: 20px 16px;
+  }
+
+  .claim-progress-bar {
+    padding: 16px;
+  }
+
+  .progress-steps {
+    gap: 8px;
+  }
+
+  .step-number {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .step-label {
+    font-size: 10px;
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-claim-form-container {
+    max-width: 95%;
+    max-height: 90vh;
+    border-radius: 12px;
+  }
+
+  .claim-progress-bar {
+    padding: 12px;
+  }
+
+  .claim-step-content {
+    padding: 16px 12px;
+  }
+
+  .progress-steps {
+    gap: 6px;
+  }
+
+  .step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .step-label {
+    font-size: 9px;
+    max-width: 45px;
+  }
+
+  .progress-fill {
+    height: 2px;
+  }
+}
+

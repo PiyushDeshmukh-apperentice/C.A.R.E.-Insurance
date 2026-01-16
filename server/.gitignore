@@ -1,0 +1,119 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+build/
+dist/
+*.egg
+
+# Environment
+.env
+.venv
+venv/
+env/
+ENV/
+
+# Virtual environments
+Pipfile.lock
+poetry.lock
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+app.db
+audit.db
+
+# Runtime files and directories
+claim_server/storage/*
+claim_server/logs/*
+claim_server/uploads/*
+claim_server/output/*
+claim_automation/output/*
+health_claim_engine/output/*
+automobile_claim_engine/output/*
+extracted/
+output/
+storage/
+logs/
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archive and test directories
+archive/
+S0004-06142005000900015-1/
+tests/
+test_*.py
+*_test.py
+quick_*.py
+simple_*.py
+debug_*.py
+setup_*.py
+reorganize_*.py
+
+# Output and report files
+*_output.txt
+*_output.py
+REPORT.txt
+TEST_RESULTS.txt
+IMPLEMENTATION_REPORT.py
+AUTOMOBILE_CLAIM_IMAGE_PROCESSING.md
+WORKFLOW_CHANGES_VISUALIZATION.py
+
+# Temporary files and directories
+temp/
+temp_*.py
+temp_*.json
+temp_*.pdf
+*.tmp
+*.log
+*.bak
+*.backup
+extracted/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+
+# API keys and secrets
+config.py
+*.key
+*.pem
+secrets.json
+
+# Telegram bot session files
+*.session
+
+# Model files (heavy binary files)
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.h5
+*.onnx
+*.model
+models/
+*.joblib
+*.pb
+*.safetensors
+

@@ -1,0 +1,211 @@
+/* ReviewStyle.css */
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: #F8FCFF;
+  border-radius: 10px;
+  border: 1px solid #DBF4FF;
+  font-family: 'Outfit', sans-serif;
+}
+
+.review-section-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0C204B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Info Section */
+.info-section {
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.04), rgba(219, 244, 255, 0.1));
+  border: 1px solid #DBF4FF;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.review-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0C204B;
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+  opacity: 0.7;
+}
+
+.review-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0C204B;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Documents Summary */
+.documents-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-text {
+  margin: 0;
+  font-size: 14px;
+  color: #0C204B;
+  font-family: 'Outfit', sans-serif;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.document-summary-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #DBF4FF;
+  font-size: 13px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.doc-check {
+  color: #22c55e;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.doc-name {
+  color: #0C204B;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doc-size {
+  color: #0C204B;
+  font-size: 12px;
+  font-family: 'Outfit', sans-serif;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+/* Decision Section */
+.decision-section {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.decision-card {
+  padding: 16px;
+  border-radius: 10px;
+  border: 2px solid #DBF4FF;
+  background: #F8FCFF;
+  transition: all 0.3s;
+  font-family: 'Outfit', sans-serif;
+}
+
+.decision-card.approved {
+  border-color: rgba(34, 197, 94, 0.3);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(22, 163, 74, 0.05));
+}
+
+.decision-card.rejected {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05));
+}
+
+.decision-card.pending {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
+}
+
+.decision-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.decision-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0C204B, #1a3a6b);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+.confidence-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  background: #FFFFFF;
+  color: #0C204B;
+  border: 1px solid #DBF4FF;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+.decision-summary {
+  margin: 0;
+  font-size: 14px;
+  color: #0C204B;
+  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Alerts in Review */
+.alert {
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.08), rgba(219, 244, 255, 0.15));
+  border: 1px solid #DBF4FF;
+}
+
+.alert-info {
+  background: linear-gradient(135deg, rgba(12, 32, 75, 0.08), rgba(219, 244, 255, 0.15));
+}
+
+.alert-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alert-title {
+  margin: 0;
+  font-weight: 700;
+  color: #0C204B;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Confirmation Checkbox */
+.checkbox-option input[type="checkbox"]:disabled + .checkbox-label {
+  opacity: 0.8;
+  cursor: default;
+}

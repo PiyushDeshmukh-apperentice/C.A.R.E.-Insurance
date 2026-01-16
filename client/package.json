@@ -1,0 +1,66 @@
+{
+  "name": "InsureGuard Pro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "rocketCritical": {
+    "dependencies": [
+      "react",
+      "react-dom",
+      "prop-types",
+      "react-router-dom",
+      "@dhiwise/component-tagger",
+      "@tailwindcss/typography",
+      "recharts"
+    ],
+    "devDependencies": [
+      "@vitejs/plugin-react",
+      "vite",
+      "tailwindcss",
+      "autoprefixer",
+      "postcss",
+      "eslint",
+      "prettier"
+    ],
+    "scripts": [
+      "start",
+      "build",
+      "preview",
+      "serve",
+      "lint",
+      "lint:fix",
+      "format"
+    ],
+    "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for app functionality"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,md,json}\""
+  },
+  "dependencies": {
+    "@dhiwise/component-tagger": "^1.0.14",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.18",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.562.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "6.0.2",
+    "recharts": "^2.15.2",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "4.3.4",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.3",
+    "vite": "^5.4.21"
+  }
+}

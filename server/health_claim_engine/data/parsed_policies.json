@@ -1,0 +1,3993 @@
+{
+  "policy_file": "20241122 - CIS - ASP.pdf",
+  "total_clauses": 98,
+  "clauses": [
+    {
+      "clause_id": "Table_1_0_3",
+      "section": "Table_Data",
+      "raw_text": "1 | Name of\nInsurance\nPolicy | Arogya Sanjeevani Policy, United India Insurance Company Ltd | -",
+      "source": "table",
+      "table_headers": [
+        "S.\nNo.",
+        "TITLE",
+        "DESCRIPTION",
+        "",
+        "POLICY",
+        ""
+      ],
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_1_0_4",
+      "section": "Table_Data",
+      "raw_text": "2 | Policy\nNumber | {} | -",
+      "source": "table",
+      "table_headers": [
+        "S.\nNo.",
+        "TITLE",
+        "DESCRIPTION",
+        "",
+        "POLICY",
+        ""
+      ],
+      "pages": [
+        1
+      ],
+      "medical_concepts": [
+        "cancer",
+        "heart disease"
+      ],
+      "conditions": [
+        "malignant",
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "C00.0",
+          "desc": "Malignant neoplasm of lip",
+          "score": 95,
+          "priority": 0.5
+        },
+        {
+          "code": "C03.0",
+          "desc": "Malignant neoplasm of gum",
+          "score": 95,
+          "priority": 0.5
+        },
+        {
+          "code": "D70.11",
+          "desc": "Agranulocytosis secondary to cancer chemotherapy",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "C00.01",
+          "desc": "Malignant neoplasm of external upper lip",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "C00.11",
+          "desc": "Malignant neoplasm of external lower lip",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "Table_1_0_5",
+      "section": "Table_Data",
+      "raw_text": "3 | Type of\nInsurance\nPolicy | Indemnity Based | -",
+      "source": "table",
+      "table_headers": [
+        "S.\nNo.",
+        "TITLE",
+        "DESCRIPTION",
+        "",
+        "POLICY",
+        ""
+      ],
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_1_0_6",
+      "section": "Table_Data",
+      "raw_text": "4 | Sum\nInsured\nBasis\nSum\nInsured | {}\n{} | -",
+      "source": "table",
+      "table_headers": [
+        "S.\nNo.",
+        "TITLE",
+        "DESCRIPTION",
+        "",
+        "POLICY",
+        ""
+      ],
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_1_0_7",
+      "section": "Table_Data",
+      "raw_text": "5 | Policy\nCoverage\n(What\nthe Policy\nCovers?) | Base Covers\n1. Hospitalisation Expenses\ni. Expenses incurred on hospitalisation for minimum period of\n24 hours.\nii. All Day Care Treatments are covered\n2. Pre-Hospitalisation and Post-Hospitalisation Expenses\nCovers expenses incurred in the 30 days prior to hospitalisation\nand in the 60 days post hospitalisation.\n3. Modern Treatment Methods & Advancement in\nTechnologies\n4. Ambulance Charges\nExpenses on road ambulance subject to a maximum of Rs.\n2000/- per hospitalisation\n5. Home Care Treatment Expenses | 3.1\n3.3\n&3.4\n3.5\n3.1.1\n3.7",
+      "source": "table",
+      "table_headers": [
+        "S.\nNo.",
+        "TITLE",
+        "DESCRIPTION",
+        "",
+        "POLICY",
+        ""
+      ],
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 2000,
+            "currency": "INR",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_duration": 24,
+            "description": "Minimum hospitalization period of 24 hours"
+          },
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "day_care_treatment"
+            ]
+          },
+          {
+            "type": "pre_post_hospitalization",
+            "pre_days": 30,
+            "post_days": 60
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_2_0_1",
+      "section": "Table_Data",
+      "raw_text": "6 | Exclusion\ns\n(What the\nhospital\ndoesn\u2019t\ncover) | Please refer to Policy Wordings for the complete list of\nexclusions.\n1. Admission primarily for investigation & evaluation (Code \u2013\nExcl04)\n2. Admission primarily for rest cure, rehabilitation, and respite\ncare (Code \u2013 Excl05)\n3. Obesity/Weight Control (Code-Excl06)\n4. Change-of-Gender treatments (Code \u2013 Excl07)\n5. Cosmetic or Plastic Surgery (Code \u2013 Excl08)\n6. Hazardous or Adventure Sports (Code \u2013 Excl09)\n7. Breach of Law (Code \u2013 Excl10)\n8. Excluded Providers (Code \u2013 Excl11)\n9. Treatment for Alcoholism, drug or substance abuse or any\naddictive condition and consequences thereof.(Code \u2013 Excl12)\n10. Treatments received in health hydros, nature cure clinics, spas\nor similar establishments.(Code \u2013 Excl13)\n11. Dietary supplements and substances that can be purchased\nwithout a prescription. (Code \u2013 Excl14)\n12. Expenses related to the treatment for correction of eyesight due\nto refractive error less than 7.5 dioptres. (Code \u2013 Excl15)\n13. Expenses related to any unproven treatment, services and\nsupplies for or in connection with any treatment.(Code \u2013\nExcl16)\n14. Expenses related to sterility and infertility.(Code \u2013 Excl17) | 5.1\n5.2\n5.3\n5.4\n5.5\n5.6\n5.7\n5.8\n5.9\n5.10\n5.11\n5.12\n5.13\n5.14",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "We will indemnify the Reasonable and Customary Charges for\nHome Care Treatment for any epidemic/ pandemic subject to a\nmaximum of 10% of the Sum Insured or Rs. 30,000 per person\nper policy period, whichever is lower.",
+        ""
+      ],
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "code": "Excl04",
+            "description": "Admission primarily for investigation & evaluation"
+          },
+          {
+            "code": "Excl05",
+            "description": "Admission primarily for rest cure, rehabilitation, and respite care"
+          },
+          {
+            "code": "Excl06",
+            "description": "Obesity/Weight Control"
+          },
+          {
+            "code": "Excl07",
+            "description": "Change-of-Gender treatments"
+          },
+          {
+            "code": "Excl08",
+            "description": "Cosmetic or Plastic Surgery"
+          },
+          {
+            "code": "Excl09",
+            "description": "Hazardous or Adventure Sports"
+          },
+          {
+            "code": "Excl10",
+            "description": "Breach of Law"
+          },
+          {
+            "code": "Excl11",
+            "description": "Excluded Providers"
+          },
+          {
+            "code": "Excl12",
+            "description": "Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof."
+          },
+          {
+            "code": "Excl13",
+            "description": "Treatments received in health hydros, nature cure clinics, spas or similar establishments."
+          },
+          {
+            "code": "Excl14",
+            "description": "Dietary supplements and substances that can be purchased without a prescription."
+          },
+          {
+            "code": "Excl15",
+            "description": "Expenses related to the treatment for correction of eyesight due to refractive error less than 7.5 dioptres."
+          },
+          {
+            "code": "Excl16",
+            "description": "Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+          },
+          {
+            "code": "Excl17",
+            "description": "Expenses related to sterility and infertility."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_3_0_1",
+      "section": "Table_Data",
+      "raw_text": "7 | Waiting\nPeriod | 1. Pre-Existing diseases will be covered after a waiting period of\n36 months of continuous coverage\n2. Expenses related to the treatment of any illness within 30 days\nfrom the first policy commencement date shall be excluded\nexcept claims arising due to an accident.\n3. Specified surgeries/treatments/diseases are covered after\nspecific waiting period 24 months\n4. Specified surgeries/treatments/diseases are covered after\nspecific waiting period 36 months | 4.1\n4.2\n4.3\n4.3",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "15. Medical treatment expenses traceable to childbirth and\nmiscarriage. (Code \u2013 Excl18)\n16. War (whether declared or not) and war like occurrence or\ninvasion, acts of foreign enemies, hostilities, civil war, rebellion,\nrevolutions, insurrections, mutiny, military or usurped power,\nseizure, capture, arrest, restraints and detainment of all kinds\n17. Nuclear, chemical or biological attack or weapons, contributed\nto, caused by, resulting from or from any other cause or event\ncontributing concurrently or in any other sequence to the loss,\nclaim or expense.\n18. Any expenses incurred on Domiciliary Hospitalisation and OPD\nTreatment.\n19. Treatment taken outside the geographical limits of India.\n20. In respect of the existing diseases, disclosed by the insured and\nmentioned in the policy schedule (based on insured\u2019s consent),\npolicyholder is not entitled to get the coverage for specified ICD\nCodes.",
+        "5.15\n5.16\n5.17\n5.18\n5.19\n5.20"
+      ],
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "pre-existing diseases",
+        "accident",
+        "specified surgeries",
+        "specified treatments",
+        "specified diseases"
+      ],
+      "conditions": [
+        "continuous coverage",
+        "malignant",
+        "severe",
+        "continuous"
+      ],
+      "rule_logic": {
+        "rule_type": "waiting_period",
+        "waiting_periods": [
+          {
+            "condition": "pre_existing",
+            "months": 36,
+            "description": "Pre-Existing diseases waiting period"
+          },
+          {
+            "condition": "general",
+            "months": 30,
+            "description": "General illness waiting period"
+          },
+          {
+            "condition": "general",
+            "months": 24,
+            "description": "Specified surgeries/treatments/diseases waiting period"
+          },
+          {
+            "condition": "general",
+            "months": 36,
+            "description": "Specified surgeries/treatments/diseases waiting period"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "G97.411",
+          "desc": "Accidental puncture or laceration of dura during a procedure",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.0",
+          "desc": "Other and unspecified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.80",
+          "desc": "Other specified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.0",
+          "desc": "Other protozoal intestinal diseases",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.81",
+          "desc": "Other specified protozoal intestinal diseases",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "Table_3_0_2",
+      "section": "Table_Data",
+      "raw_text": "8 | Financial\nLimits of\nCoverage | The policy will pay only you to the limits specified\nhereunder for the following diseases/procedures:\ni. Room Rent, Boarding, nursing expenses all-\ninclusive as provided by the Hospital/Nursing",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "15. Medical treatment expenses traceable to childbirth and\nmiscarriage. (Code \u2013 Excl18)\n16. War (whether declared or not) and war like occurrence or\ninvasion, acts of foreign enemies, hostilities, civil war, rebellion,\nrevolutions, insurrections, mutiny, military or usurped power,\nseizure, capture, arrest, restraints and detainment of all kinds\n17. Nuclear, chemical or biological attack or weapons, contributed\nto, caused by, resulting from or from any other cause or event\ncontributing concurrently or in any other sequence to the loss,\nclaim or expense.\n18. Any expenses incurred on Domiciliary Hospitalisation and OPD\nTreatment.\n19. Treatment taken outside the geographical limits of India.\n20. In respect of the existing diseases, disclosed by the insured and\nmentioned in the policy schedule (based on insured\u2019s consent),\npolicyholder is not entitled to get the coverage for specified ICD\nCodes.",
+        "5.15\n5.16\n5.17\n5.18\n5.19\n5.20"
+      ],
+      "pages": [
+        3
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_4_0_1",
+      "section": "Table_Data",
+      "raw_text": "9 | Claims\nProcedure | Notification of Claim\ni.\nUpon the happening of any event which may give rise to a claim\nunder this Policy, the Insured Person/Insured Person\u2019s\nrepresentative shall notify the TPA /company in writing\nproviding all relevant information relating to claim including the\nplan of treatment, policy number etc. within the prescribed time\nlimit as under:\na. Within 24 hours from the date of emergency hospitalisation\nrequired or before the Insured Person\u2019s discharge from\nHospital, whichever is earlier.\nb. At least 48 hours before admission in Hospital in case of a\nplanned Hospitalisation\nProcedure for Cashless Claims\nii.\na. Cashless facility for treatment taken in a hospital is subject to\npre-authorization by the TPA.\nb. A booklet containing list of network provider/PPN hospitals\nshall be provided by the TPA. The updated list of network\nproviders/PPNs is available on the website of the company | 7",
+      "source": "table",
+      "table_headers": [
+        "",
+        "Sub-Limits\nCo-pay\nDeductible\nAny Other\nLimit",
+        "Home up to 2% of the sum insured subject to\nmaximum of Rs. 5000/- per day.\nii. Intensive Care Unit (ICU) charges/Intensive\nCardiac Care Unit (ICCU) charges all-inclusive as\nprovided by the Hospital/Nursing Home up to 5%\nof the sum insured subject to a maximum of Rs.\n10,000/- per day.\niii. Cataract \u2013 25% of SI or Rs. 40,000, per eye,\nwhichever is lower\niv. MTMATs \u2013 50% of Sum Insured\nv. Road Ambulance - 2000/- hospitalisation\nvi. Home Care Treatment Expenses: a maximum of 10% of S.I,\nsubject to Rs. 30,000 per person per policy period\nEvery claim under the Policy shall be subject to a Co-\npayment of 5% applicable to a claim amount admissible\nand payable as per the terms and conditions of the\nPolicy.\nNA\nProportionate Payment Clause:\nIn case of admission to a room at rates exceeding the aforesai\nlimits, the payment of all associated medical expenses incurred\nthe Hospital shall be effected in the same proportion as th\nadmissible rate per day bears to the actual rate per day of Roo\nRent.",
+        "3.1\n3.1\n3.2\n3.5\n3.1.1.5\n3.7\n11\n3.1\nd\nat\ne\nm"
+      ],
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "notification",
+        "limits": [
+          {
+            "type": "time",
+            "value": 24,
+            "unit": "hours",
+            "condition": "emergency_hospitalisation"
+          },
+          {
+            "type": "time",
+            "value": 48,
+            "unit": "hours",
+            "condition": "planned_hospitalisation"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_6_1_1",
+      "section": "Table_Data",
+      "raw_text": "of documents to",
+      "source": "table",
+      "table_headers": [
+        "Type of Claim",
+        "",
+        "Time Limit for submission",
+        ""
+      ],
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_6_1_2",
+      "section": "Table_Data",
+      "raw_text": "company/TPA",
+      "source": "table",
+      "table_headers": [
+        "Type of Claim",
+        "",
+        "Time Limit for submission",
+        ""
+      ],
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_6_1_3",
+      "section": "Table_Data",
+      "raw_text": "Reimbursement of\nhospitalisation,\ndaycare and\npre-hospitalisation\nexpenses | Within 15 (fifteen) days of the\ndate of discharge from the\nhospital.",
+      "source": "table",
+      "table_headers": [
+        "Type of Claim",
+        "",
+        "Time Limit for submission",
+        ""
+      ],
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 15,
+            "currency": "days",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          },
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "hospitalisation",
+              "daycare",
+              "pre-hospitalisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_6_1_4",
+      "section": "Table_Data",
+      "raw_text": "Reimbursement of post-\nhospitalisation\nexpenses | Within 15 (fifteen) days from\ncompletion of post-\nhospitalisation treatment.",
+      "source": "table",
+      "table_headers": [
+        "Type of Claim",
+        "",
+        "Time Limit for submission",
+        ""
+      ],
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 15,
+            "currency": "days",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "treatment_type",
+            "description": "post-hospitalisation treatment"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_7_0_1",
+      "section": "Table_Data",
+      "raw_text": "10 | Policy\nServicing | Please contact your Policy issuing office, details of which are\nmentioned in your Policy Schedule. | -",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "e. Any medical practitioner or Authorised Person authorised by\nthe TPA / Company shall be allowed to examine the Insured\nPerson in case of any alleged injury or disease leading to\nHospitalisation if so required.\nServices offered by TPA\nvi.\nServicing of claims i.e., claim admissions and assessments,\nunder this Policy by way of preauthorization of cashless\ntreatment or processing of claims, as per the terms and\nconditions of the policy.\nThe services offered by a TPA shall not include:\na. Claim settlement and claim rejection;\nb. Any services directly to any Insured Person or to any other\nperson unless such service is in accordance with the terms\nand conditions of the Agreement entered into with the\nCompany.\nTurn Around Time (TAT) for claims settlement:\ni. TAT for preauthorization of cashless facility 1\nhour\nii. TAT for cashless final bill authorization 3 hours\nLink for below:\ni. Network Hospitals details:\nhttps://uiic.co.in/en/tpa-ppn-network-hospitals\nii. Helpline number:Kindly contact TPA as mentioned in\nthe Policy schedule\niii. Excluded Providers:\nhttps://uiic.co.in/sites/default/files/excluded_provi\nders.pdf\nDownloading claim form:\nhttps://uiic.co.in/en/claims/claim-forms",
+        ""
+      ],
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_7_0_2",
+      "section": "Table_Data",
+      "raw_text": "11 | Grievance/\nComplaint | In case of any grievance, you may contact UIIC through:\na. Website: www.uiic.co.in\nb. Toll Free Number: 1800 425 333 33\nc. E-Mail: customercare@uiic.co.in\nYou may also approach the grievance cell at any of our branches\nwith details of the grievance.\nAlternatively, you may lodge a complaint at the IRDAI Integrated\nGrievance Management System (https://igms.irda.gov.in/) OR\napproach the Office of the Insurance Ombudsman in your | 10",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "e. Any medical practitioner or Authorised Person authorised by\nthe TPA / Company shall be allowed to examine the Insured\nPerson in case of any alleged injury or disease leading to\nHospitalisation if so required.\nServices offered by TPA\nvi.\nServicing of claims i.e., claim admissions and assessments,\nunder this Policy by way of preauthorization of cashless\ntreatment or processing of claims, as per the terms and\nconditions of the policy.\nThe services offered by a TPA shall not include:\na. Claim settlement and claim rejection;\nb. Any services directly to any Insured Person or to any other\nperson unless such service is in accordance with the terms\nand conditions of the Agreement entered into with the\nCompany.\nTurn Around Time (TAT) for claims settlement:\ni. TAT for preauthorization of cashless facility 1\nhour\nii. TAT for cashless final bill authorization 3 hours\nLink for below:\ni. Network Hospitals details:\nhttps://uiic.co.in/en/tpa-ppn-network-hospitals\nii. Helpline number:Kindly contact TPA as mentioned in\nthe Policy schedule\niii. Excluded Providers:\nhttps://uiic.co.in/sites/default/files/excluded_provi\nders.pdf\nDownloading claim form:\nhttps://uiic.co.in/en/claims/claim-forms",
+        ""
+      ],
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "grievance_process",
+        "grievance_channels": [
+          {
+            "type": "website",
+            "url": "www.uiic.co.in"
+          },
+          {
+            "type": "toll_free_number",
+            "number": "1800 425 333 33"
+          },
+          {
+            "type": "email",
+            "address": "customercare@uiic.co.in"
+          },
+          {
+            "type": "branch",
+            "description": "Grievance cell at any of our branches"
+          },
+          {
+            "type": "online_platform",
+            "url": "https://igms.irda.gov.in/"
+          },
+          {
+            "type": "ombudsman",
+            "description": "Office of the Insurance Ombudsman"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_8_0_1",
+      "section": "Table_Data",
+      "raw_text": "12 | Things to\nremember | Free Look cancellation: You are allowed a period of 30 days\nfrom date of receipt of the policy document, whether received\nelectronically or otherwise, to review its terms and conditions and\nto return the policy if not acceptable to you. This is not applicable\non renewals.\nIf the Insured has not made any claim during the free look period,\nthe Insured shall be entitled to a refund of the premium paid\nsubject only to a deduction of a proportionate risk premium for the\nperiod of cover and the expenses, if any, incurred by the insurer\non medical examination of the proposer and stamp duty charges.\nPolicy renewal: Except on grounds of fraud, moral\nhazard or non-disclosure or misrepresentation or non-\ncooperation, renewal of your policy shall not be denied,\nprovided the policy is not withdrawn.\nMigration: Insured Person will be provided facility to migrate the\npolicy to other health insurance products/plans offered by UIIC by\napplying before the policy renewal date.\nPortability: Insured Person will be provided facility to port the\nentire policy to an individual health insurance product offered by\nanother Insurer by before policy renewal date. Portability is\nsubject to underwriting.\nChange in Sum Insured: Sum Insured can be changed\n(increased/decreased) only at the time of renewal or at any times\nsubject to underwriting by the Company. For increase in S.I, the\nwaiting period if any shall start afresh only for the enhanced\nportion of the sum insured.\nMoratorium Period: After completion of sixty continuous months\nof coverage (including portability and migration) in health\ninsurance policy, no policy and claim shall be contestable by the\ninsurer on grounds of non-disclosure, misrepresentation, except\non grounds of established fraud. This period of sixty continuous\nmonths is called as moratorium period. The moratorium would be\napplicable for the sums insured of the first policy. Wherever, the\nsum insured is enhanced, completion of sixty continuous months\nwould be applicable from the date of enhancement of sums\ninsured only on the enhanced limits | 11.18\n11.15\n11.13\n11.14\n11.20\n6",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "respective Area/Region. Details of Insurance Ombudsman offices\nhave been provided as Annexure \u2013 3 in the Policy Wordings.",
+        ""
+      ],
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "proportionate",
+            "value": 30,
+            "condition": "period_of_cover"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "fraud|moral_hazard|non-disclosure|misrepresentation|non-cooperation",
+            "months": 0,
+            "description": "Renewal waiting period"
+          },
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "fraud|moral_hazard|non-disclosure|misrepresentation|non-cooperation",
+            "description": "Renewal exclusion"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Table_8_0_2",
+      "section": "Table_Data",
+      "raw_text": "13 | Your\nObligations | Disclosure of Information: Please disclose all pre-existing\ndisease/s or condition/s. Policyholder is required to disclose\nall material information such as, but not limited to, pre-existing\ndiseases/conditions, medical history, etc. as sought in the | 11.1",
+      "source": "table",
+      "table_headers": [
+        "",
+        "",
+        "respective Area/Region. Details of Insurance Ombudsman offices\nhave been provided as Annexure \u2013 3 in the Policy Wordings.",
+        ""
+      ],
+      "pages": [
+        8
+      ],
+      "medical_concepts": [
+        "pre-existing disease",
+        "pre-existing condition",
+        "medical history"
+      ],
+      "conditions": [
+        "malignant",
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "material_information",
+            "value": "all",
+            "condition": "pre-existing_diseases/conditions"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "disclosure",
+            "min_age": 0,
+            "max_age": 100,
+            "requires_disclosure": true
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "A07.91",
+          "desc": "Protozoal intestinal disease, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A18.171",
+          "desc": "Tuberculous female pelvic inflammatory disease",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.91",
+          "desc": "Zoonotic bacterial disease, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.11",
+          "desc": "Cat-scratch disease",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A48.21",
+          "desc": "Nonpneumonic Legionnaires' disease [Pontiac fever]",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "1",
+      "section": "General",
+      "raw_text": "Expenses incurred on hospitalisation for minimum period of 24 hours.",
+      "pages": [
+        1
+      ],
+      "medical_concepts": [
+        "hospitalisation"
+      ],
+      "conditions": [
+        "severe"
+      ],
+      "procedures": [
+        "hospitalisation"
+      ],
+      "durations": [
+        "24 hours"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": true,
+            "condition": {
+              "type": "duration",
+              "value": 24,
+              "unit": "hours"
+            }
+          }
+        ],
+        "exclusions": [],
+        "description": "Expenses incurred on hospitalisation for minimum period of 24 hours."
+      },
+      "icd_candidates": [
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.11",
+          "desc": "Severe combined immunodeficiency [SCID] with low T- and B-cell numbers",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "2",
+      "section": "General",
+      "raw_text": "All Day Care Treatments are covered",
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ]
+          }
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "clause_id": "3",
+      "section": "General",
+      "raw_text": "Covers expenses incurred in the 30 days prior to hospitalisation and in the 60 days post hospitalisation.",
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "INR",
+            "condition": "per_occurrence"
+          },
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "INR",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [],
+        "coverage_start": {
+          "type": "time_window",
+          "start": "-30d",
+          "end": "0d"
+        },
+        "coverage_end": {
+          "type": "time_window",
+          "start": "0d",
+          "end": "60d"
+        }
+      }
+    },
+    {
+      "clause_id": "4",
+      "section": "General",
+      "raw_text": "Expenses on road ambulance subject to a maximum of Rs. 2000/- per hospitalisation",
+      "pages": [
+        1
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 2000,
+            "currency": "INR",
+            "condition": "per_hospitalisation"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "1",
+      "section": "Exclusions",
+      "raw_text": "Admission primarily for investigation & evaluation (Code \u2013 Excl04)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "2",
+      "section": "Exclusions",
+      "raw_text": "Admission primarily for rest cure, rehabilitation, and respite care (Code \u2013 Excl05)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          },
+          {
+            "code": "Excl05",
+            "description": "Admission primarily for rest cure, rehabilitation, and respite care"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "3",
+      "section": "Exclusions",
+      "raw_text": "Obesity/Weight Control (Code-Excl06)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [
+        "obesity",
+        "weight control"
+      ],
+      "conditions": [
+        "obesity"
+      ],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "E66.0",
+          "desc": "Overweight and obesity",
+          "score": 95,
+          "priority": 0.5
+        },
+        {
+          "code": "E66.11",
+          "desc": "Drug-induced obesity",
+          "score": 95,
+          "priority": 0.5
+        },
+        {
+          "code": "E66.80",
+          "desc": "Other obesity",
+          "score": 95,
+          "priority": 0.5
+        },
+        {
+          "code": "E66.00",
+          "desc": "Obesity due to excess calories",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "E66.011",
+          "desc": "Morbid (severe) obesity due to excess calories",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "4",
+      "section": "Exclusions",
+      "raw_text": "Change-of-Gender treatments (Code \u2013 Excl07)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [
+        "Change-of-Gender treatments",
+        "Code \u2013 Excl07"
+      ],
+      "conditions": [
+        "malignant",
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          },
+          {
+            "condition": "Change-of-Gender",
+            "description": "Change-of-Gender treatments"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "C02.0",
+          "desc": "Malignant neoplasm of other and unspecified parts of tongue",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "C02.31",
+          "desc": "Malignant neoplasm of anterior two-thirds of tongue, part unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "C04.81",
+          "desc": "Malignant neoplasm of overlapping sites of floor of mouth",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "5",
+      "section": "Exclusions",
+      "raw_text": "Cosmetic or Plastic Surgery (Code \u2013 Excl08)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "cosmetic|plastic_surgery",
+            "description": "Cosmetic or Plastic Surgery"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "6",
+      "section": "Exclusions",
+      "raw_text": "Hazardous or Adventure Sports (Code \u2013 Excl09)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "7",
+      "section": "Exclusions",
+      "raw_text": "Breach of Law (Code \u2013 Excl10)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "8",
+      "section": "Exclusions",
+      "raw_text": "Excluded Providers (Code \u2013 Excl11)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "9",
+      "section": "Exclusions",
+      "raw_text": "Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof.(Code \u2013 Excl12)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [
+        "Alcoholism",
+        "substance abuse",
+        "addictive condition"
+      ],
+      "conditions": [
+        "Alcoholism",
+        "substance abuse",
+        "addictive condition"
+      ],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury",
+            "code": "Excl12"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "F19.10",
+          "desc": "Other psychoactive substance abuse",
+          "score": 95,
+          "priority": 0.5
+        },
+        {
+          "code": "F19.101",
+          "desc": "Other psychoactive substance abuse, uncomplicated",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "F19.111",
+          "desc": "Other psychoactive substance abuse, in remission",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "F10.10",
+          "desc": "Alcohol abuse",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "F10.1201",
+          "desc": "Alcohol abuse with intoxication, uncomplicated",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "10",
+      "section": "Exclusions",
+      "raw_text": "Treatments received in health hydros, nature cure clinics, spas or similar establishments.(Code \u2013 Excl13)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          },
+          {
+            "condition": "Excl13",
+            "description": "Treatments received in health hydros, nature cure clinics, spas or similar establishments."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "11",
+      "section": "Exclusions",
+      "raw_text": "Dietary supplements and substances that can be purchased without a prescription. (Code \u2013 Excl14)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          },
+          {
+            "condition": "dietary_supplements|prescription",
+            "description": "Dietary supplements and substances that can be purchased without a prescription"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "12",
+      "section": "Exclusions",
+      "raw_text": "Expenses related to the treatment for correction of eyesight due to refractive error less than 7.5 dioptres. (Code \u2013 Excl15)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [
+        "eyesight",
+        "refractive error",
+        "dioptres"
+      ],
+      "conditions": [
+        "correction of eyesight"
+      ],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "description": "Expenses related to the treatment for correction of eyesight due to refractive error less than 7.5 dioptres.",
+        "condition": "refractive_error",
+        "limits": {
+          "value": 7.5,
+          "type": "fixed_amount"
+        }
+      },
+      "icd_candidates": [
+        {
+          "code": "A06.31",
+          "desc": "Ameboma of intestine",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A15.01",
+          "desc": "Tuberculosis of lung",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A18.101",
+          "desc": "Tuberculosis of genitourinary system, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "H53.0211",
+          "desc": "Refractive amblyopia, right eye",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "H53.0221",
+          "desc": "Refractive amblyopia, left eye",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "13",
+      "section": "Exclusions",
+      "raw_text": "Expenses related to any unproven treatment, services and supplies for or in connection with any treatment.(Code \u2013 Excl16)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "unproven treatment",
+            "description": "Expenses related to any unproven treatment, services and supplies for or in connection with any treatment."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "14",
+      "section": "Exclusions",
+      "raw_text": "Expenses related to sterility and infertility.(Code \u2013 Excl17)",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [
+        "sterility",
+        "infertility"
+      ],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "sterility|infertility",
+            "description": "Expenses related to sterility and infertility"
+          }
+        ]
+      },
+      "icd_candidates": []
+    },
+    {
+      "clause_id": "2",
+      "section": "General",
+      "raw_text": "We will indemnify the Reasonable and Customary Charges for Home Care Treatment for any epidemic/ pandemic subject to a maximum of 10% of the Sum Insured or Rs. 30,000 per person per policy period, whichever is lower.",
+      "pages": [
+        2
+      ],
+      "medical_concepts": [
+        "Home Care Treatment",
+        "epidemic",
+        "pandemic"
+      ],
+      "conditions": [
+        "Reasonable and Customary Charges"
+      ],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "capped_amount",
+            "value": 30000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_person_per_policy_period"
+          },
+          {
+            "type": "percentage",
+            "value": 10,
+            "percentage_of": "SI",
+            "condition": "per_person_per_policy_period"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "A75.01",
+          "desc": "Epidemic louse-borne typhus fever due to Rickettsia prowazekii",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A88.11",
+          "desc": "Epidemic vertigo",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "B30.31",
+          "desc": "Acute epidemic hemorrhagic conjunctivitis (enteroviral)",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "E08.370",
+          "desc": "Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A01.0",
+          "desc": "Typhoid and paratyphoid fevers",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "15",
+      "section": "Exclusions",
+      "raw_text": "Medical treatment expenses traceable to childbirth and miscarriage.",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "childbirth",
+        "miscarriage"
+      ],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "childbirth|miscarriage",
+            "description": "Medical treatment expenses traceable to childbirth and miscarriage"
+          }
+        ]
+      },
+      "icd_candidates": []
+    },
+    {
+      "clause_id": "16",
+      "section": "Exclusions",
+      "raw_text": "War (whether declared or not) and war like occurrence or invasion, acts of foreign enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, arrest, restraints and detainment of all kinds",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "war|war_like_occurrence|invasion|acts_of_foreign_enemies|hostilities|civil_war|rebellion|revolutions|insurrections|mutiny|military_or_usurped_power|seizure|capture|arrest|restraints_and_detainment_of_all_kinds",
+            "description": "War (whether declared or not) and war like occurrence or invasion, acts of foreign enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, arrest, restraints and detainment of all kinds"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "17",
+      "section": "Exclusions",
+      "raw_text": "Nuclear, chemical or biological attack or weapons, contributed to, caused by, resulting from or from any other cause or event contributing concurrently or in any other sequence to the loss, claim or expense.",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "nuclear|chemical|biological",
+            "description": "Nuclear, chemical or biological attack or weapons, contributed to, caused by, resulting from or from any other cause or event contributing concurrently or in any other sequence to the loss, claim or expense."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "18",
+      "section": "Exclusions",
+      "raw_text": "Any expenses incurred on Domiciliary Hospitalisation and OPD Treatment.",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "Domiciliary Hospitalisation",
+        "OPD Treatment"
+      ],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          },
+          {
+            "condition": "domiciliary_hospitalisation|opd_treatment",
+            "description": "Any expenses incurred on Domiciliary Hospitalisation and OPD Treatment"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "E08.370",
+          "desc": "Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "E09.370",
+          "desc": "Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "E10.370",
+          "desc": "Type 1 diabetes mellitus with diabetic macular edema, resolved following treatment",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "19",
+      "section": "Exclusions",
+      "raw_text": "Treatment taken outside the geographical limits of India.",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "condition": "geographical_location",
+        "description": "Treatment taken outside the geographical limits of India"
+      }
+    },
+    {
+      "clause_id": "20",
+      "section": "Exclusions",
+      "raw_text": "In respect of the existing diseases, disclosed by the insured and mentioned in the policy schedule (based on insured\u2019s consent), policyholder is not entitled to get the coverage for specified ICD Codes.",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "diseases",
+        "ICD Codes"
+      ],
+      "conditions": [
+        "existing",
+        "specified",
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "exclusions": [
+          {
+            "condition": "pre_existing",
+            "description": "Existing diseases, disclosed by the insured and mentioned in the policy schedule (based on insured\u2019s consent)"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "A07.0",
+          "desc": "Other protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.81",
+          "desc": "Other specified protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.0",
+          "desc": "Other zoonotic bacterial diseases, not elsewhere classified",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.0",
+          "desc": "Other and unspecified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.80",
+          "desc": "Other specified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "1",
+      "section": "Waiting Period",
+      "raw_text": "Pre-Existing diseases will be covered after a waiting period of 36 months of continuous coverage",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "diseases",
+        "coverage"
+      ],
+      "conditions": [
+        "pre-existing"
+      ],
+      "rule_logic": {
+        "rule_type": "waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 36,
+            "condition": "months",
+            "currency": "",
+            "percentage_of": "",
+            "description": "Continuous coverage"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "pre_existing",
+            "months": 36,
+            "description": "Waiting period for pre-existing diseases"
+          }
+        ],
+        "coverage_conditions": [],
+        "exclusions": [],
+        "description": "Waiting Period"
+      },
+      "icd_candidates": [
+        {
+          "code": "A07.0",
+          "desc": "Other protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.81",
+          "desc": "Other specified protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.0",
+          "desc": "Other zoonotic bacterial diseases, not elsewhere classified",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "2",
+      "section": "Waiting Period",
+      "raw_text": "Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident.",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "illness",
+        "accident"
+      ],
+      "conditions": [
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "waiting_period",
+        "limits": [],
+        "waiting_periods": [
+          {
+            "condition": "general",
+            "months": 30,
+            "description": "Waiting period for illness treatment"
+          }
+        ],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "general",
+            "description": "Illness treatment within 30 days from policy commencement date, except accident claims"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "G62.811",
+          "desc": "Critical illness polyneuropathy",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "G72.811",
+          "desc": "Critical illness myopathy",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "G97.411",
+          "desc": "Accidental puncture or laceration of dura during a procedure",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "3",
+      "section": "Waiting Period",
+      "raw_text": "Specified surgeries/treatments/diseases are covered after specific waiting period 24 months",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "surgeries",
+        "treatments",
+        "diseases"
+      ],
+      "conditions": [
+        "specified"
+      ],
+      "disease_types": [
+        "cancer"
+      ],
+      "disease_severity": [
+        "severe"
+      ],
+      "time_period": [
+        "24 months"
+      ],
+      "rule_logic": {
+        "rule_type": "waiting_period",
+        "limits": [],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [],
+        "exclusions": []
+      },
+      "icd_candidates": [
+        {
+          "code": "A07.0",
+          "desc": "Other protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.81",
+          "desc": "Other specified protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.0",
+          "desc": "Other zoonotic bacterial diseases, not elsewhere classified",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.0",
+          "desc": "Other and unspecified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.80",
+          "desc": "Other specified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "4",
+      "section": "Waiting Period",
+      "raw_text": "Specified surgeries/treatments/diseases are covered after specific waiting period 36 months",
+      "pages": [
+        3
+      ],
+      "medical_concepts": [
+        "surgeries",
+        "treatments",
+        "diseases"
+      ],
+      "conditions": [
+        "specified"
+      ],
+      "time_period": [
+        "36 months"
+      ],
+      "rule_logic": {
+        "rule_type": "waiting_period",
+        "limits": [],
+        "waiting_periods": [
+          {
+            "condition": "general",
+            "months": 36,
+            "description": "Waiting period for specified surgeries/treatments/diseases"
+          }
+        ],
+        "coverage_conditions": [],
+        "exclusions": []
+      },
+      "icd_candidates": [
+        {
+          "code": "A07.0",
+          "desc": "Other protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.81",
+          "desc": "Other specified protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.0",
+          "desc": "Other zoonotic bacterial diseases, not elsewhere classified",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.0",
+          "desc": "Other and unspecified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "D75.80",
+          "desc": "Other specified diseases of blood and blood-forming organs",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "i. Notification of Claim (a)",
+      "section": "Claims Procedure",
+      "raw_text": "Within 24 hours from the date of emergency hospitalisation required or before the Insured Person\u2019s discharge from Hospital, whichever is earlier.",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 24,
+            "currency": "hours",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "ii. Procedure for Cashless Claims (a)",
+      "section": "Claims Procedure",
+      "raw_text": "Cashless facility for treatment taken in a hospital is subject to pre-authorization by the TPA.",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "INR",
+            "condition": "per_occurrence",
+            "percentage_of": "SI"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "clause_id": "ii. Procedure for Cashless Claims (b)",
+      "section": "Claims Procedure",
+      "raw_text": "A booklet containing list of network provider/PPN hospitals shall be provided by the TPA.",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [],
+        "description": "A booklet containing list of network provider/PPN hospitals shall be provided by the TPA."
+      }
+    },
+    {
+      "clause_id": "iii. Cataract",
+      "section": "Sub-Limits",
+      "raw_text": "Cataract \u2013 25% of SI or Rs. 40,000, per eye, whichever is lower",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [
+        "cataract"
+      ],
+      "conditions": [
+        "SI"
+      ],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "E10.361",
+          "desc": "Type 1 diabetes mellitus with diabetic cataract",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "E11.361",
+          "desc": "Type 2 diabetes mellitus with diabetic cataract",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "E13.361",
+          "desc": "Other specified diabetes mellitus with diabetic cataract",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "E08.361",
+          "desc": "Diabetes mellitus due to underlying condition with diabetic cataract",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "E09.361",
+          "desc": "Drug or chemical induced diabetes mellitus with diabetic cataract",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "iv. MTMATs",
+      "section": "Sub-Limits",
+      "raw_text": "MTMATs \u2013 50% of Sum Insured",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "percentage",
+            "value": 50,
+            "percentage_of": "Sum Insured"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "v. Road Ambulance",
+      "section": "Sub-Limits",
+      "raw_text": "Road Ambulance - 2000/- hospitalisation",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 2000,
+            "currency": "INR"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "vi. Home Care Treatment Expenses",
+      "section": "Sub-Limits",
+      "raw_text": "Home Care Treatment Expenses: a maximum of 10% of S.I, subject to Rs. 30,000 per person per policy period",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "percentage",
+            "value": 10,
+            "percentage_of": "SI",
+            "condition": "per_person",
+            "capped_amount": {
+              "type": "fixed_amount",
+              "value": 30000,
+              "currency": "INR"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Proportionate Payment Clause",
+      "section": "Proportionate Payment Clause",
+      "raw_text": "In case of admission to a room at rates exceeding the aforesaid limits, the payment of all associated medical expenses incurred at the Hospital shall be effected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent.",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "percentage",
+            "value": 1,
+            "percentage_of": "admissible_rate_per_day",
+            "condition": "per_occurrence"
+          },
+          {
+            "type": "percentage",
+            "value": 1,
+            "percentage_of": "actual_rate_per_day",
+            "condition": "per_occurrence"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Any Other (Home)",
+      "section": "Sub-Limits",
+      "raw_text": "Home up to 2% of the sum insured subject to maximum of Rs. 5000/- per day.",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "capped_amount",
+            "value": 5000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_day"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "Any Other (ICU)",
+      "section": "Sub-Limits",
+      "raw_text": "Intensive Care Unit (ICU) charges/Intensive Cardiac Care Unit (ICCU) charges all-inclusive as provided by the Hospital/Nursing Home up to 5% of the sum insured subject to a maximum of Rs. 10,000/- per day.",
+      "pages": [
+        4
+      ],
+      "medical_concepts": [
+        "Intensive Care Unit (ICU)",
+        "Intensive Cardiac Care Unit (ICCU)",
+        "Hospital",
+        "Nursing Home"
+      ],
+      "conditions": [
+        "severe"
+      ],
+      "treatments": [
+        "charges"
+      ],
+      "locations": [
+        "ICU",
+        "ICCU",
+        "Hospital",
+        "Nursing Home"
+      ],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "capped_amount",
+            "value": 10000,
+            "currency": "INR",
+            "condition": "per_day"
+          },
+          {
+            "type": "percentage",
+            "value": 5,
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.11",
+          "desc": "Severe combined immunodeficiency [SCID] with low T- and B-cell numbers",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "I23.31",
+          "desc": "Rupture of cardiac wall without hemopericardium as current complication following acute myocardial infarction",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "I31.41",
+          "desc": "Cardiac tamponade",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "c",
+      "section": "Claim Procedure",
+      "raw_text": "The customer may call the TPA\u2019s toll-free phone number provided in the policy copy/on the health ID card for intimation of the claim and related assistance.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [],
+        "description": "Customer may call the TPA\u2019s toll-free phone number for intimation of the claim and related assistance."
+      }
+    },
+    {
+      "clause_id": "d",
+      "section": "Claim Procedure",
+      "raw_text": "On admission to the network provider/PPN hospital, please produce the ID card issued by the TPA at the Hospital Helpdesk.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [],
+        "description": "On admission to the network provider/PPN hospital, please produce the ID card issued by the TPA at the Hospital Helpdesk."
+      }
+    },
+    {
+      "clause_id": "e",
+      "section": "Claim Procedure",
+      "raw_text": "The TPA upon getting the cashless request form and related medical information from the Insured Person/ network provider/PPN shall issue a pre-authorization letter to the hospital after verification.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "claim_procedure",
+        "conditions": [
+          {
+            "type": "event",
+            "event": "TPA receives cashless request form and related medical information",
+            "actions": [
+              {
+                "type": "issue_pre_authorization_letter",
+                "to": "hospital",
+                "after": "verification"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "f",
+      "section": "Claim Procedure",
+      "raw_text": "At the time of discharge, the Insured Person shall verify and sign the discharge papers and pay for non-medical and inadmissible expenses.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": null,
+            "max_age": null,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "g",
+      "section": "Claim Procedure",
+      "raw_text": "The TPA reserves the right to deny pre-authorization in case the Insured Person is unable to provide the relevant medical details.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [
+        "pre-authorization",
+        "Insured Person",
+        "medical details"
+      ],
+      "conditions": [
+        "unable"
+      ],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "pre_existing",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "F40.2321",
+          "desc": "Fear of other medical care",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "G47.011",
+          "desc": "Insomnia due to medical condition",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "G47.141",
+          "desc": "Hypersomnia due to medical condition",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "F60.11",
+          "desc": "Schizoid personality disorder",
+          "score": 68,
+          "priority": 0.5
+        },
+        {
+          "code": "F60.21",
+          "desc": "Antisocial personality disorder",
+          "score": 68,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "h",
+      "section": "Claim Procedure",
+      "raw_text": "Denial of a Pre-authorization request is in no way to be construed as a denial of treatment or denial of coverage.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "a",
+      "section": "Procedure for reimbursement of Claims",
+      "raw_text": "In non-network hospitals payment must be made up-front and for reimbursement of claims the Insured Person may submit the necessary documents to TPA within the prescribed time limit.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [],
+        "conditions": [
+          {
+            "type": "non_network_hospital",
+            "description": "Payment must be made up-front"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "b",
+      "section": "Procedure for reimbursement of Claims",
+      "raw_text": "Claims for Pre- and Post-Hospitalisation will be settled on reimbursement basis on production of relevant claim papers and cash receipts within the prescribed time limit.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "INR",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [],
+        "conditions": [
+          {
+            "type": "claim_papers",
+            "value": "relevant"
+          },
+          {
+            "type": "cash_receipts",
+            "value": "within_prescribed_time_limit"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "a",
+      "section": "Documents",
+      "raw_text": "Duly completed claim form",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          },
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ]
+          },
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "b",
+      "section": "Documents",
+      "raw_text": "Attending medical practitioner\u2019s / surgeon\u2019s certificate regarding diagnosis/ nature of operation performed, along with date of diagnosis, advise for admission, investigation test reports etc. supported by the prescription from attending medical practitioner.",
+      "pages": [
+        5
+      ],
+      "medical_concepts": [
+        "diagnosis",
+        "operation",
+        "admission",
+        "investigation",
+        "prescription"
+      ],
+      "conditions": [
+        "malignant",
+        "severe"
+      ],
+      "entities": [
+        "surgeon",
+        "attending medical practitioner"
+      ],
+      "tests": [
+        "test reports"
+      ],
+      "procedures": [
+        "operation"
+      ],
+      "treatments": [
+        "admission",
+        "prescription"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [],
+        "documents": [
+          {
+            "type": "medical_certificate",
+            "required_fields": [
+              "diagnosis",
+              "date_of_diagnosis",
+              "advice_for_admission",
+              "investigation_test_reports",
+              "prescription"
+            ]
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "C00.01",
+          "desc": "Malignant neoplasm of external upper lip",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "C00.11",
+          "desc": "Malignant neoplasm of external lower lip",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "C00.21",
+          "desc": "Malignant neoplasm of external lip, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "c",
+      "section": "Customer Information Sheet",
+      "raw_text": "Medical history of the patient as recorded, bills (including break up of charges) and payment receipts duly supported by the prescription from attending medical practitioner/ hospital.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [
+        "prescription",
+        "medical practitioner",
+        "hospital",
+        "payment receipts"
+      ],
+      "conditions": [
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "requires_hospitalization": true
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.11",
+          "desc": "Severe combined immunodeficiency [SCID] with low T- and B-cell numbers",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "G47.011",
+          "desc": "Insomnia due to medical condition",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "G47.141",
+          "desc": "Hypersomnia due to medical condition",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "d",
+      "section": "Customer Information Sheet",
+      "raw_text": "Discharge certificate/ summary from the hospital.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          },
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "e",
+      "section": "Customer Information Sheet",
+      "raw_text": "Cash-memos from the Diagnostic Centre(s)/ hospital(s)/ chemist(s) supported by proper prescription.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "INR",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "cosmetic",
+            "description": "Cosmetic"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "f",
+      "section": "Customer Information Sheet",
+      "raw_text": "Payment receipts from doctors, surgeons and anesthetists.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [
+        "doctors",
+        "surgeons",
+        "anesthetists"
+      ],
+      "conditions": [
+        "malignant",
+        "severe"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          },
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "C00.01",
+          "desc": "Malignant neoplasm of external upper lip",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "C00.11",
+          "desc": "Malignant neoplasm of external lower lip",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "C00.21",
+          "desc": "Malignant neoplasm of external lip, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "B50.81",
+          "desc": "Other severe and complicated Plasmodium falciparum malaria",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "D81.01",
+          "desc": "Severe combined immunodeficiency [SCID] with reticular dysgenesis",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "g",
+      "section": "Customer Information Sheet",
+      "raw_text": "Bills, receipts, Stickers of the Implants.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "h",
+      "section": "Customer Information Sheet",
+      "raw_text": "Any other document required by company/ TPA",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65,
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "v",
+      "section": "Time Limit for submission of documents",
+      "raw_text": "Within 15 (fifteen) days of the date of discharge from the hospital.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 15,
+            "currency": "days",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "time_limit",
+            "min_value": 1,
+            "max_value": 15,
+            "description": "Within 15 days of discharge from the hospital"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "v",
+      "section": "Time Limit for submission of documents",
+      "raw_text": "Within 15 (fifteen) days from completion of post-hospitalisation treatment.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 15,
+            "currency": "",
+            "percentage_of": "",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [],
+        "description": "Within 15 (fifteen) days from completion of post-hospitalisation treatment."
+      }
+    },
+    {
+      "clause_id": "a",
+      "section": "Notes",
+      "raw_text": "The company shall only accept bills/invoices/medical treatment-related documents only in the Insured Person\u2019s name for whom the claim is submitted.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [],
+        "conditions": [
+          {
+            "type": "document_type",
+            "document_types": [
+              "bill",
+              "invoice",
+              "medical treatment-related document"
+            ],
+            "condition": "insured_person"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "b",
+      "section": "Notes",
+      "raw_text": "Waiver of clause V.B.4.v of the policy may be considered in extreme cases of hardship where it is proved to the satisfaction of the Company that under the circumstances in which the Insured was placed, it was not possible for him or any other person to give such notice or file claim within the prescribed time-limit.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "",
+            "percentage_of": "",
+            "condition": ""
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "general",
+            "months": 0,
+            "description": ""
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "general",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "c",
+      "section": "Notes",
+      "raw_text": "The Insured Person shall also give the TPA / Company such additional information and assistance as the TPA / Company may require in dealing with the claim including an authorisation to obtain Medical and other records from the hospital, lab, etc.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [
+        "Medical records",
+        "lab"
+      ],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": []
+      },
+      "icd_candidates": [
+        {
+          "code": "H83.00",
+          "desc": "Labyrinthitis",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "H83.011",
+          "desc": "Labyrinthitis, right ear",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "H83.021",
+          "desc": "Labyrinthitis, left ear",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "F40.2321",
+          "desc": "Fear of other medical care",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "G47.011",
+          "desc": "Insomnia due to medical condition",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "d",
+      "section": "Notes",
+      "raw_text": "All the documents submitted to TPA shall be electronically collected by us for settlement/denial of the claims by the appropriate authority.",
+      "pages": [
+        6
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "1",
+      "section": "General",
+      "raw_text": "e. Any medical practitioner or Authorised Person authorised by the TPA / Company shall be allowed to examine the Insured Person in case of any alleged injury or disease leading to Hospitalisation if so required.",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [
+        "injury",
+        "disease",
+        "Hospitalisation"
+      ],
+      "conditions": [
+        "alleged"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [],
+        "conditions": [
+          {
+            "type": "authorized_person",
+            "description": "Medical practitioner or Authorised Person authorised by the TPA / Company"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "F40.230",
+          "desc": "Blood, injection, injury type phobia",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "F40.2331",
+          "desc": "Fear of injury",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.0",
+          "desc": "Other protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.81",
+          "desc": "Other specified protozoal intestinal diseases",
+          "score": 90,
+          "priority": 0.5
+        },
+        {
+          "code": "A07.91",
+          "desc": "Protozoal intestinal disease, unspecified",
+          "score": 90,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "2",
+      "section": "General",
+      "raw_text": "vi. Services offered by TPA Servicing of claims i.e., claim admissions and assessments, under this Policy by way of preauthorization of cashless treatment or processing of claims, as per the terms and conditions of the policy.",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "3",
+      "section": "General",
+      "raw_text": "The services offered by a TPA shall not include: a. Claim settlement and claim rejection; b. Any services directly to any Insured Person or to any other person unless such service is in accordance with the terms and conditions of the Agreement entered into with the Company.",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          },
+          {
+            "condition": "pre_existing",
+            "description": "Pre-existing conditions"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "4",
+      "section": "General",
+      "raw_text": "Turn Around Time (TAT) for claims settlement: i. TAT for preauthorization of cashless facility 1 hour ii. TAT for cashless final bill authorization 3 hours",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "limit",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 1,
+            "currency": "hours",
+            "percentage_of": "",
+            "condition": "per_occurrence"
+          },
+          {
+            "type": "fixed_amount",
+            "value": 3,
+            "currency": "hours",
+            "percentage_of": "",
+            "condition": "per_occurrence"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "5",
+      "section": "General",
+      "raw_text": "Link for below: i. Network Hospitals details: https://uiic.co.in/en/tpa-ppn-network-hospitals ii. Helpline number:Kindly contact TPA as mentioned in the Policy schedule iii. Excluded Providers: https://uiic.co.in/sites/default/files/excluded_provi ders.pdf",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "general",
+            "months": 0,
+            "description": "Waiting period details not provided"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65,
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "6",
+      "section": "General",
+      "raw_text": "Downloading claim form: https://uiic.co.in/en/claims/claim-forms",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 40000,
+            "currency": "INR",
+            "percentage_of": "SI",
+            "condition": "per_occurrence|annual|lifetime"
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "hernia|pre_existing|general",
+            "months": 24,
+            "description": "Waiting period for hernia surgery"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ],
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "7",
+      "section": "General",
+      "raw_text": "Policy Servicing Please contact your Policy issuing office, details of which are mentioned in your Policy Schedule.",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period"
+      }
+    },
+    {
+      "clause_id": "8",
+      "section": "General",
+      "raw_text": "Grievance/ Complaint In case of any grievance, you may contact UIIC through: a. Website: www.uiic.co.in b. Toll Free Number: 1800 425 333 33 c. E-Mail: customercare@uiic.co.in",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": null,
+            "max_age": null,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [],
+        "contact_methods": [
+          {
+            "type": "website|toll_free_number|email",
+            "value": "www.uiic.co.in",
+            "description": "Website"
+          },
+          {
+            "type": "toll_free_number",
+            "value": "1800 425 333 33",
+            "description": "Toll Free Number"
+          },
+          {
+            "type": "email",
+            "value": "customercare@uiic.co.in",
+            "description": "E-Mail"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "9",
+      "section": "General",
+      "raw_text": "You may also approach the grievance cell at any of our branches with details of the grievance.",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          }
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "clause_id": "10",
+      "section": "General",
+      "raw_text": "Alternatively, you may lodge a complaint at the IRDAI Integrated Grievance Management System (https://igms.irda.gov.in/) OR approach the Office of the Insurance Ombudsman in your",
+      "pages": [
+        7
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          },
+          {
+            "type": "treatment_type",
+            "treatment_types": [
+              "surgery",
+              "medical_management"
+            ]
+          },
+          {
+            "type": "hospitalization",
+            "requires_hospitalization": true
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "self_inflicted|pre_existing|cosmetic",
+            "description": "Attempted suicide or intentional self-inflicted injury"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "1",
+      "section": "General",
+      "raw_text": "Free Look cancellation: You are allowed a period of 30 days from date of receipt of the policy document, whether received electronically or otherwise, to review its terms and conditions and to return the policy if not acceptable to you.",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 30,
+            "currency": "days",
+            "condition": "per_occurrence"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "review_period",
+            "min_age": 0,
+            "max_age": 0,
+            "description": "Review period for policy terms and conditions"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "2",
+      "section": "Policy Renewal",
+      "raw_text": "Policy renewal: Except on grounds of fraud, moral hazard or non-disclosure or misrepresentation or non-cooperation, renewal of your policy shall not be denied, provided the policy is not withdrawn.",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "",
+            "percentage_of": "",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "fraud|moral_hazard|non-disclosure|misrepresentation|non-cooperation",
+            "description": "Policy renewal denied on grounds of fraud, moral hazard or non-disclosure or misrepresentation or non-cooperation"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "3",
+      "section": "Policy Renewal",
+      "raw_text": "Migration: Insured Person will be provided facility to migrate the policy to other health insurance products/plans offered by UIIC by applying before the policy renewal date.",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit",
+            "min_age": 18,
+            "max_age": 65
+          }
+        ],
+        "exclusions": [],
+        "conditions": [
+          {
+            "type": "migration",
+            "description": "Migration to other health insurance products/plans before policy renewal date"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "4",
+      "section": "Policy Renewal",
+      "raw_text": "Portability: Insured Person will be provided facility to port the entire policy to an individual health insurance product offered by another Insurer by before policy renewal date. Portability is subject to underwriting.",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "",
+            "percentage_of": "",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": []
+      }
+    },
+    {
+      "clause_id": "5",
+      "section": "Change in Sum Insured",
+      "raw_text": "Change in Sum Insured: Sum Insured can be changed (increased/decreased) only at the time of renewal or at any times subject to underwriting by the Company.",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "",
+            "percentage_of": "",
+            "condition": "per_occurrence"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [],
+        "conditions": [
+          {
+            "condition": "renewal|underwriting",
+            "description": "Change in Sum Insured can be changed (increased/decreased) only at the time of renewal or at any times subject to underwriting by the Company."
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "6",
+      "section": "Change in Sum Insured",
+      "raw_text": "Moratorium Period: After completion of sixty continuous months of coverage (including portability and migration) in health insurance policy, no policy and claim shall be contestable by the insurer on grounds of non-disclosure, misrepresentation, except on grounds of established fraud.",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage|exclusion|limit|waiting_period",
+        "limits": [
+          {
+            "type": "fixed_amount|percentage|capped_amount",
+            "value": 0,
+            "currency": "",
+            "percentage_of": "",
+            "condition": ""
+          }
+        ],
+        "waiting_periods": [
+          {
+            "condition": "general",
+            "months": 60,
+            "description": "Moratorium Period"
+          }
+        ],
+        "coverage_conditions": [
+          {
+            "type": "general",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "non_disclosure|misrepresentation|established_fraud",
+            "description": "Non-disclosure, misrepresentation, except on grounds of established fraud"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "7",
+      "section": "Your Obligations",
+      "raw_text": "Disclosure of Information: Please disclose all pre-existing disease/s or condition/s. Policyholder is required to disclose all material information such as, but not limited to, pre-existing diseases/conditions, medical history, etc. as sought in the",
+      "pages": [
+        8
+      ],
+      "medical_concepts": [
+        "pre-existing disease",
+        "pre-existing condition",
+        "medical history"
+      ],
+      "conditions": [
+        "material"
+      ],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 18,
+            "max_age": 65,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "pre_existing",
+            "description": "Pre-existing diseases/conditions"
+          }
+        ]
+      },
+      "icd_candidates": [
+        {
+          "code": "A07.91",
+          "desc": "Protozoal intestinal disease, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A18.171",
+          "desc": "Tuberculous female pelvic inflammatory disease",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.91",
+          "desc": "Zoonotic bacterial disease, unspecified",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A28.11",
+          "desc": "Cat-scratch disease",
+          "score": 86,
+          "priority": 0.5
+        },
+        {
+          "code": "A48.21",
+          "desc": "Nonpneumonic Legionnaires' disease [Pontiac fever]",
+          "score": 86,
+          "priority": 0.5
+        }
+      ]
+    },
+    {
+      "clause_id": "1",
+      "section": "General",
+      "raw_text": "Non-disclosure, misrepresentation or misdescription of such information may result in claim not being paid and shall make the policy void and all premium paid thereon shall be forfeited to UIIC.",
+      "pages": [
+        9
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "exclusion",
+        "limits": [
+          {
+            "type": "fixed_amount",
+            "value": 0,
+            "currency": "INR",
+            "condition": "void"
+          }
+        ],
+        "waiting_periods": [],
+        "coverage_conditions": [],
+        "exclusions": [
+          {
+            "condition": "non-disclosure|misrepresentation|misdescription",
+            "description": "Non-disclosure, misrepresentation or misdescription of information"
+          }
+        ]
+      }
+    },
+    {
+      "clause_id": "2",
+      "section": "Nomination",
+      "raw_text": "Policyholder is required at the inception of the policy to make a nomination for the purpose of payment of claims under the policy in the event of death of the Policyholder.",
+      "pages": [
+        9
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [],
+        "nomination": {
+          "required": true,
+          "at_inception": true
+        }
+      }
+    },
+    {
+      "clause_id": "3",
+      "section": "General",
+      "raw_text": "In case of any conflict between the CIS and the policy document, the terms and conditions mentioned in the policy shall prevail.",
+      "pages": [
+        9
+      ],
+      "medical_concepts": [],
+      "conditions": [],
+      "rule_logic": {
+        "rule_type": "coverage",
+        "limits": [],
+        "waiting_periods": [],
+        "coverage_conditions": [
+          {
+            "type": "age_limit|treatment_type|hospitalization",
+            "min_age": 0,
+            "max_age": 0,
+            "treatment_types": [],
+            "requires_hospitalization": false
+          }
+        ],
+        "exclusions": [
+          {
+            "condition": "pre_existing",
+            "description": "Pre-existing conditions"
+          },
+          {
+            "condition": "cosmetic",
+            "description": "Cosmetic procedures"
+          }
+        ]
+      }
+    }
+  ]
+}
