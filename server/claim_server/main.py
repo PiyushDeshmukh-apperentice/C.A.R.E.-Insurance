@@ -290,7 +290,7 @@ async def submit_health_claim(
         result = {
             "claim_id": claim.id,
             "decision": processing_result["decision"],
-            "confidence": processing_result["confidence"],
+            "confidence": processing_result["confidence"]*100,
             "summary": processing_result["summary"],
             "diagnosis": processing_result["diagnosis"],
             "decision_reasons": processing_result["decision_reasons"],
