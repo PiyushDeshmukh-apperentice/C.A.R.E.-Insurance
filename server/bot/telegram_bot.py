@@ -232,6 +232,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     if session["state"] == State.ASK_PASSWORD:
+        # --- PRIVACY FEATURE: AUTO-DELETE PASSWORD ---
+        try:
+            await context.bot.delete_message(chat_id=update.effective_chat.id, message_id=update.message.message_id)
+        except Exception:
+            pass # Ignore if permission missing or message already deleted
+
         await context.bot.send_chat_action(chat_id=update.effective_chat.id, action=constants.ChatAction.TYPING)
         token = login(session["email"], text)
         if not token:
@@ -314,7 +320,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             # --- RESTORED: Step Counter 1/13 ---
             step_count = f"Step {session['auto_step'] + 1}/{len(AUTO_FIELDS_ORDER)}"
             
-            await update.message.reply_text(f"*{step_count}*: {prompt}\n{progress}", parse_mode="Markdown")
+            await update.message.reply_text(f"📝 *{step_count}*: {prompt}\n{progress}", parse_mode="Markdown")
         else:
             session["state"] = State.UPLOADING_AUTO_DOCS
             session["doc_index"] = 0

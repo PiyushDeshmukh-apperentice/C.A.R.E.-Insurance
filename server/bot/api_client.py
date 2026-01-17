@@ -3,12 +3,17 @@ import requests
 API_BASE = "http://localhost:8000"
 
 def login(email, password):
+   # Strictly sending 'email' and 'password' as Form Data
     r = requests.post(
         f"{API_BASE}/auth/login",
         data={"email": email, "password": password}
     )
+    
     if r.status_code != 200:
+        # I added this print so you can see WHY it fails in your terminal
+        print(f"❌ Login Failed: {r.status_code} - {r.text}")
         return None
+        
     return r.json()["access_token"]
 
 def submit_health_claim(email, token, policy_name, files):
