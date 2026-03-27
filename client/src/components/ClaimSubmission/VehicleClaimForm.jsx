@@ -89,6 +89,7 @@ export default function VehicleClaimForm({ onClose, onSuccess }) {
       uploadFormData.append('experience_years', parseInt(formData.experienceYears));
       uploadFormData.append('under_influence', formData.underInfluence);
       uploadFormData.append('policy_name', formData.policyName);
+      uploadFormData.append('vehicle_type', formData.vehicleType);
       
       // Append vehicle image
       if (formData.vehicleImage) {

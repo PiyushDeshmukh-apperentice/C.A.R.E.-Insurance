@@ -115,7 +115,7 @@ def save_automobile_claim_files(files: List, claim_id: str) -> List[Dict[str, An
 
     return documents
 
-def process_automobile_claim_with_engine(claim_data: Dict[str, Any], documents: List[Dict[str, Any]]) -> Dict[str, Any]:
+def process_automobile_claim_with_engine(claim_data: Dict[str, Any], documents: List[Dict[str, Any]], vehicle_type: str) -> Dict[str, Any]:
     """Process automobile claim using automobile claim engine"""
     print("🔄 STARTING process_automobile_claim_with_engine")
     try:
@@ -134,7 +134,7 @@ def process_automobile_claim_with_engine(claim_data: Dict[str, Any], documents: 
         result_claim_data, result, image_result = process_automobile_claim(
             claim_data, 
             claim_data.get("driver"), 
-            "car",
+            vehicle_type,
             image_path=vehicle_image_path
         )
 

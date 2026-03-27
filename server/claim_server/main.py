@@ -323,6 +323,7 @@ async def submit_automobile_claim(
     experience_years: int = Form(...),
     under_influence: bool = Form(...),
     policy_name: str = Form(...),
+    vehicle_type: str = Form(...),
     vehicle_image: UploadFile = File(...),
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
@@ -359,13 +360,13 @@ async def submit_automobile_claim(
                 "experience_years": experience_years,
                 "under_influence": under_influence
             },
-            "policy_name": policy_name
+            "policy_name": policy_name,
+            "vehicle_type": vehicle_type
         }
 
         logger.info("Starting automobile claim processing...")
-        processing_result = process_automobile_claim_with_engine(event_data, documents)
+        processing_result = process_automobile_claim_with_engine(event_data, documents, vehicle_type)
         
-        vehicle_type = "car" 
         claim = create_automobile_claim_record(db, claim_id, current_user.id, vehicle_type, policy_name, documents, processing_result)
 
         policy_decision = processing_result.get("policy_decision", {})
