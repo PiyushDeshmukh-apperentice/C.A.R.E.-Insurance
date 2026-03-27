@@ -372,6 +372,11 @@ async def submit_automobile_claim(
         cost_estimation = processing_result.get("cost_estimation", {})
         image_result = processing_result.get("image_result")
 
+        # Get the raw path for Telegram
+        raw_image_path = image_result.get("output_image_path") if image_result else None
+        # Create the web path for React
+        web_image_path = get_web_path(raw_image_path) if raw_image_path else None
+
         result = {
             "claim_id": claim.id,
             "decision": policy_decision.get("decision", "UNKNOWN"),
@@ -379,7 +384,8 @@ async def submit_automobile_claim(
             "summary": policy_decision.get("reason", "Claim processed"),
             "estimated_cost": cost_estimation.get("total_estimated_cost", 0),
             "cost_breakdown": cost_estimation.get("cost_breakdown", []),
-            "output_image_path": image_result.get("output_image_path") if image_result else None,
+            "output_image_path": raw_image_path,  
+            "output_image_url": web_image_path,   
             "damage_analysis": image_result.get("damage_data") if image_result else None,
             "audit_reference_id": f"AUD_{uuid.uuid4().hex[:6].upper()}"
         }

@@ -28,7 +28,7 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
 
   // Vehicle-specific UI
   if (isVehicle) {
-    const hasOutputImage = claimResult.output_image_path;
+    const hasOutputImage = claimResult.output_image_url;
     const damageAnalysis = claimResult.damage_analysis;
 
     return (
@@ -42,15 +42,15 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
             {isApproved
               ? 'Claim Approved'
               : isPending
-              ? 'Claim Under Review'
-              : 'Claim Submitted'}
+                ? 'Claim Under Review'
+                : 'Claim Submitted'}
           </h2>
           <p className="vehicle-success-subtitle">
             {isApproved
               ? 'Your vehicle insurance claim has been approved'
               : isPending
-              ? 'Our team is reviewing your vehicle claim'
-              : 'Your claim has been successfully submitted'}
+                ? 'Our team is reviewing your vehicle claim'
+                : 'Your claim has been successfully submitted'}
           </p>
         </div>
 
@@ -68,17 +68,17 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
             <div className="vehicle-image-section">
               <h3 className="section-title">🖼️ Damage Assessment</h3>
               <div className="vehicle-image-container">
-                <img 
-                  src={`http://localhost:8000${claimResult.output_image_path}`}
-                  alt="Vehicle damage assessment" 
+                <img
+                  src={`http://localhost:8000${claimResult.output_image_url}`}
+                  alt="Vehicle damage assessment"
                   className="vehicle-output-image"
                   onError={(e) => {
-                    console.error('❌ Image load error:', `http://localhost:8000${claimResult.output_image_path}`);
+                    console.error('❌ Image load error:', `http://localhost:8000${claimResult.output_image_url}`);
                     e.target.style.display = 'none';
                     e.target.parentElement.innerHTML += '<p style="text-align:center; color:#999; padding:20px;">Image could not be loaded</p>';
                   }}
                   onLoad={() => {
-                    console.log('✅ Image loaded successfully:', `http://localhost:8000${claimResult.output_image_path}`);
+                    console.log('✅ Image loaded successfully:', `http://localhost:8000${claimResult.output_image_url}`);
                   }}
                 />
               </div>
@@ -133,12 +133,24 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
               </div>
               {claimResult.cost_breakdown && claimResult.cost_breakdown.length > 0 && (
                 <div className="vehicle-cost-breakdown">
-                  {claimResult.cost_breakdown.map((item, idx) => (
-                    <div key={idx} className="cost-item">
-                      <span className="cost-label">{item.category || item.name || `Item ${idx + 1}`}</span>
-                      <span className="cost-value">₹ {item.cost?.toLocaleString('en-IN') || item.amount?.toLocaleString('en-IN') || '0'}</span>
+                  {claimResult.cost_breakdown && claimResult.cost_breakdown.length > 0 && (
+                    <div className="vehicle-cost-breakdown">
+                      {claimResult.cost_breakdown.map((item, idx) => {
+                        // Grab the part name, prioritizing the AI's actual keys
+                        const partName = item.part_name || item.part || item.category || item.name || `Item ${idx + 1}`;
+
+                        // Grab the cost, prioritizing the AI's actual keys
+                        const itemCost = item.estimated_cost || item.cost || item.amount || 0;
+
+                        return (
+                          <div key={idx} className="cost-item">
+                            <span className="cost-label">{partName}</span>
+                            <span className="cost-value">₹ {Number(itemCost).toLocaleString('en-IN')}</span>
+                          </div>
+                        );
+                      })}
                     </div>
-                  ))}
+                  )}
                 </div>
               )}
             </div>
@@ -211,15 +223,15 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
           {isApproved
             ? 'Claim Approved!'
             : isPending
-            ? 'Claim Submitted for Review'
-            : 'Claim Requires Review'}
+              ? 'Claim Submitted for Review'
+              : 'Claim Requires Review'}
         </h2>
         <p className="success-subtitle">
           {isApproved
             ? 'Your claim has been approved successfully'
             : isPending
-            ? 'Your claim has been submitted and will be reviewed'
-            : 'Your claim needs additional review'}
+              ? 'Your claim has been submitted and will be reviewed'
+              : 'Your claim needs additional review'}
         </p>
       </div>
 
@@ -344,13 +356,13 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
           claimResult.decision_reasons?.length > 0 ||
           claimResult.applied_clauses?.length > 0 ||
           claimResult.ignored_exclusions?.length > 0) && (
-          <button
-            className="btn-toggle-details"
-            onClick={() => setShowDetails(!showDetails)}
-          >
-            {showDetails ? '← Hide Details' : 'Show Details →'}
-          </button>
-        )}
+            <button
+              className="btn-toggle-details"
+              onClick={() => setShowDetails(!showDetails)}
+            >
+              {showDetails ? '← Hide Details' : 'Show Details →'}
+            </button>
+          )}
       </div>
 
       {/* Next Steps */}

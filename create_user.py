@@ -5,10 +5,10 @@ import sys
 BASE_URL = "http://localhost:8000"
 
 # We use a NEW user to avoid conflicts with the broken 'test@example.com'
-USERNAME = "bot_piyush"
-EMAIL = "piyush@gmail.com"  
+USERNAME = "bot"
+EMAIL = "rahul@gmail.com"  
 MOBILE = "1234567890"
-PASSWORD = "piyushtest"
+PASSWORD = "Rahul123#"
 
 def register_and_verify():
     print(f"🔄 Connecting to {BASE_URL}...")
