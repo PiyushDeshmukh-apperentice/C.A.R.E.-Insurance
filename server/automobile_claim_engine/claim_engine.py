@@ -38,7 +38,7 @@ def process_automobile_claim(event_data=None, driver_data=None, vehicle_type="ca
             # Determine output directory (same as vehicle image)
             output_dir = os.path.dirname(image_path) or "."
             
-            image_result = process_car_image(image_path, output_dir)
+            image_result = process_car_image(image_path, vehicle_type,output_dir)
             
             # Merge damage data into claim
             if image_result and "damage_data" in image_result:

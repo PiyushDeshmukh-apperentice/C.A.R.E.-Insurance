@@ -5,8 +5,8 @@
   "active": true,
 
   "vehicle_eligibility": {
-    "allowed_types": ["private"],
-    "allowed_categories": ["car"]
+    "allowed_types": ["private", "commercial"],
+    "allowed_categories": ["car", "scooty", "bike"]
   },
 
   "incident_conditions": {
