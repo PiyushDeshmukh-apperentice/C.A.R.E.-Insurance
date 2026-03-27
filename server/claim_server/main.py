@@ -365,6 +365,7 @@ async def submit_automobile_claim(
         }
 
         logger.info("Starting automobile claim processing...")
+        print(vehicle_type)
         processing_result = process_automobile_claim_with_engine(event_data, documents, vehicle_type)
         
         claim = create_automobile_claim_record(db, claim_id, current_user.id, vehicle_type, policy_name, documents, processing_result)

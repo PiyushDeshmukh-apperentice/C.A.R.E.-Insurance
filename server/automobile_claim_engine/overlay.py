@@ -36,8 +36,8 @@ def process_car_image(image_path, vehicle_type, output_dir=None):
 
     # --- 2. Load Models (Dynamic based on vehicle_type) ---
     if vehicle_type == "scooty":
-        part_model_path = get_model_path("models/scooty_parts.pt")
-        damage_model_path = get_model_path("models/scooty_damages.pt")
+        part_model_path = get_model_path("models/bike_part_model.pt")
+        damage_model_path = get_model_path("models/scooty_damage.pt")
     else: 
         part_model_path = get_model_path("models/car_parts.pt")
         damage_model_path = get_model_path("models/damages_best.pt")
@@ -87,7 +87,7 @@ def process_car_image(image_path, vehicle_type, output_dir=None):
     # SCOOTY CLAUSE: Random severity between 0.3 and 0.7
     if vehicle_type == "scooty":
         severity_score = round(random.uniform(0.3, 0.7), 2)
-        print(f"ℹ️ Scooty detected: Using random severity score: {severity_score}")
+        # print(f"ℹ️ Scooty detected: Using random severity score: {severity_score}")
     else:
         try:
             predicted_class, severity_score = predict_severity(image_path)
@@ -142,11 +142,12 @@ def process_car_image(image_path, vehicle_type, output_dir=None):
             p_cls = int(part_boxes[i].cls[0])
             part_name = part_model.names[p_cls]
             
-            # SCOOTY CLAUSE: Remap headlight to front_mudguard
-            if vehicle_type == "scooty" and part_name.lower() == "headlight":
-                print(f"🔄 Remapping scooty 'headlight' to 'front_mudguard'")
+            # SCOOTY CLAUSE: Remap indicator to front_mudguard
+            if vehicle_type == "scooty" and part_name.lower() == "Indicator":
+                # print(f"🔄 Remapping scooty 'headlight' to 'front_mudguard'")
+                print("PART NAME", part_name)
                 part_name = "front_mudguard"
-            
+            print("PART NAME", part_name)
             damaged_parts.append({
                 "part_name": part_name,
                 "part_confidence": round(float(part_boxes[i].conf[0]), 2),

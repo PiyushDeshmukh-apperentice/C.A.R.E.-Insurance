@@ -54,7 +54,8 @@
       "Roof",
       "Tail-light",
       "Trunk",
-      "Windshield"
+      "Windshield",
+      "front_mudguard"
     ],
 
     "excluded_parts": [
