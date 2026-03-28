@@ -68,27 +68,8 @@ export default function VehicleTypeStep({ formData, onNext, onCancel }) {
               <label htmlFor="car" className="radio-label">
                 {/* <span className="radio-icon">🚗</span> */}
                 <span className="radio-content">
-                  <span className="radio-title">Four Wheeler (Car)</span>
+                  <span className="radio-title">Four Wheeler</span>
                   <span className="radio-desc">Sedan, SUV, or any 4-wheeler vehicle</span>
-                </span>
-              </label>
-            </div>
-
-            {/* Bike Option */}
-            <div className="radio-option">
-              <input
-                type="radio"
-                id="bike"
-                name="vehicleType"
-                value="bike"
-                checked={vehicleType === 'bike'}
-                onChange={(e) => setVehicleType(e.target.value)}
-              />
-              <label htmlFor="bike" className="radio-label">
-                {/* <span className="radio-icon">🏍️</span> */}
-                <span className="radio-content">
-                  <span className="radio-title">Motorcycle/Bike</span>
-                  <span className="radio-desc">Two-wheeler motorcycle or bike</span>
                 </span>
               </label>
             </div>
@@ -99,34 +80,15 @@ export default function VehicleTypeStep({ formData, onNext, onCancel }) {
                 type="radio"
                 id="scooter"
                 name="vehicleType"
-                value="scooter"
-                checked={vehicleType === 'scooter'}
+                value="scooty"
+                checked={vehicleType === 'scooty'}
                 onChange={(e) => setVehicleType(e.target.value)}
               />
               <label htmlFor="scooter" className="radio-label">
                 {/* <span className="radio-icon">🛵</span> */}
                 <span className="radio-content">
-                  <span className="radio-title">Scooter/Scooty</span>
-                  <span className="radio-desc">Two-wheeler scooter or scooty</span>
-                </span>
-              </label>
-            </div>
-
-            {/* Truck Option */}
-            <div className="radio-option">
-              <input
-                type="radio"
-                id="truck"
-                name="vehicleType"
-                value="truck"
-                checked={vehicleType === 'truck'}
-                onChange={(e) => setVehicleType(e.target.value)}
-              />
-              <label htmlFor="truck" className="radio-label">
-                {/* <span className="radio-icon">🚚</span> */}
-                <span className="radio-content">
-                  <span className="radio-title">Truck/Heavy Vehicle</span>
-                  <span className="radio-desc">Commercial truck or heavy vehicle</span>
+                  <span className="radio-title">Two Wheeler</span>
+                  <span className="radio-desc">Scooty or Bike</span>
                 </span>
               </label>
             </div>

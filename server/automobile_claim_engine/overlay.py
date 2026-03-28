@@ -143,11 +143,9 @@ def process_car_image(image_path, vehicle_type, output_dir=None):
             part_name = part_model.names[p_cls]
             
             # SCOOTY CLAUSE: Remap indicator to front_mudguard
-            if vehicle_type == "scooty" and part_name.lower() == "Indicator":
+            if vehicle_type == "scooty" and part_name.lower() == "indicator":
                 # print(f"🔄 Remapping scooty 'headlight' to 'front_mudguard'")
-                print("PART NAME", part_name)
                 part_name = "front_mudguard"
-            print("PART NAME", part_name)
             damaged_parts.append({
                 "part_name": part_name,
                 "part_confidence": round(float(part_boxes[i].conf[0]), 2),

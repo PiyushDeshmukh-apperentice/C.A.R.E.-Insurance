@@ -40,14 +40,14 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
           </div>
           <h2 className="vehicle-success-title">
             {isApproved
-              ? 'Claim Approved'
+              ? 'Claim Verified'
               : isPending
                 ? 'Claim Under Review'
                 : 'Claim Submitted'}
           </h2>
           <p className="vehicle-success-subtitle">
             {isApproved
-              ? 'Your vehicle insurance claim has been approved'
+              ? 'Your vehicle insurance claim is under review and has been verified by our system'
               : isPending
                 ? 'Our team is reviewing your vehicle claim'
                 : 'Your claim has been successfully submitted'}
@@ -59,7 +59,7 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
           {/* Claim Status - PROMINENT */}
           <div className="vehicle-status-alert">
             <div className={`status-badge ${isApproved ? 'approved' : isPending ? 'pending' : 'submitted'}`}>
-              {isApproved ? '✅ CLAIM APPROVED' : isPending ? '⏳ UNDER REVIEW' : '📋 CLAIM SUBMITTED'}
+              {isApproved ? '✅ CLAIM VERIFIED' : isPending ? '⏳ UNDER REVIEW' : '📋 CLAIM SUBMITTED'}
             </div>
           </div>
 
@@ -117,7 +117,7 @@ export default function SuccessStep({ claimResult, isAccident, claimType, onClos
                 {isApproved ? '✅' : isPending ? '⏳' : '⚠️'}
               </div>
               <div className="vehicle-decision-content">
-                <h4 className="vehicle-decision-status">{claimResult.decision.replace(/_/g, ' ')}</h4>
+                <h4 className="vehicle-decision-status">{isApproved ? 'VERIFIED' : isPending ? 'UNDER REVIEW' : 'REJECTED'}</h4>
                 <p className="vehicle-decision-summary">{claimResult.summary}</p>
               </div>
             </div>
